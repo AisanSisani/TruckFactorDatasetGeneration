@@ -7,12 +7,15 @@ if __name__ == '__main__':
     pullsCreated = 0
     pullsMerged  = 0
     pullsCommented = 0
-
+    additions = 0
+    deletions = 0
     g = Github("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")
     repo = g.get_repo("wp-cli/wp-cli")
     devList = repo.get_contributors()
     commitList = repo.get_commits(until=datetime.datetime(2015, 8, 25))
+    print(commitList.totalCount)
     pullList = repo.get_pulls()
+
 
 
     # total commits per author
@@ -21,10 +24,16 @@ if __name__ == '__main__':
             if (commit.author!=None and dev != None):
                 if (commit.author.login == dev.login):
                     totalCommits+=1
+                    additions += commit.stats.additions
+                    deletions += commit.stats.deletions
         print(dev.login + "          number of commits = " + str(totalCommits))
+        print(dev.login + "          number of additions = " + str(additions))
+        print(dev.login + "          number of deletions = " + str(deletions))
         totalCommits = 0
+        additions = 0
+        deletions = 0
 
-    # pull requests created and merged per author
+    # pull requests created, merged and commented on per author
     for dev in devList:
         for pull in pullList:
         #    print(pull.created_at)
@@ -45,7 +54,6 @@ if __name__ == '__main__':
         pullsMerged = 0
         pullsCommented = 0
 
-    # comments
 
 
 
