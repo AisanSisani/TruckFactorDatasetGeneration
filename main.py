@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
 
 
-    # total commits, additions, and deletions per author per author
+    # total commits, additions, and deletions per author
     for dev in devList:
         for commit in commitList:
             if (commit.author!=None and dev != None):
