@@ -53,6 +53,8 @@ if __name__ == '__main__':
 
     # Commits
     df['commit'] = [0] * n
+    df['addition'] = [0] * n
+    df['deletion'] = [0] * n
 
     start_time = time.time()
     for commit in commitList:
@@ -60,9 +62,11 @@ if __name__ == '__main__':
             name = commit.author.login
             # df[df['dev'] == name]['commit'] += 1 # gives warning
             df.loc[df['dev'] == name, 'commit'] += 1
+            df.loc[df['dev'] == name, 'addition'] += commit.stats.additions
+            df.loc[df['dev'] == name, 'deletion'] += commit.stats.deletions
     end_time = time.time()
 
-    print("Commits done in %s seconds" % (end_time - start_time))
+    print("Commits, Addition, and Deletion done in %s seconds" % (end_time - start_time))
     df.to_csv('output/o1_commit.csv')
 
     # Open Pull Requests
