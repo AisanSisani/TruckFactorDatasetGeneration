@@ -4,7 +4,6 @@ import pandas as pd
 import time
 import os
 
-
 if __name__ == '__main__':
     print(os.getcwd())
     totalCommits = 0
@@ -12,7 +11,10 @@ if __name__ == '__main__':
     pullsMerged = 0
     pullsCommented = 0
 
-    g = Github("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")
+    # TODO change the location to a key file and add it to the .gitignore
+    g = Github("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")
+
+    # TODO change it with a general solution
     repo = g.get_repo("wp-cli/wp-cli")
     devList = repo.get_contributors()
     commitList = repo.get_commits(until=datetime.datetime(2015, 8, 25))
@@ -49,7 +51,6 @@ if __name__ == '__main__':
     df = pd.DataFrame()
     df['dev'] = dev_list
 
-
     # Commits
     df['commit'] = [0] * n
 
@@ -64,7 +65,6 @@ if __name__ == '__main__':
     print("Commits done in %s seconds" % (end_time - start_time))
     df.to_csv('output/o1_commit.csv')
 
-
     # Open Pull Requests
     start_time = time.time()
     df['pull_open'] = [0] * n
@@ -77,7 +77,6 @@ if __name__ == '__main__':
     print("Open pull requests in %s seconds" % (end_time - start_time))
     df.to_csv('output/o2_open.csv')
 
-
     # Closed Pull Requests
     start_time = time.time()
     df['pull_merged'] = [0] * n
@@ -85,8 +84,21 @@ if __name__ == '__main__':
         if pull.created_at < datetime.datetime(2015, 8, 25):
             if pull.merged_by is not None:
                 name = pull.merged_by.login
-                print(type(pull.merged_by))
                 df.loc[df['dev'] == name, 'pull_merged'] += 1
     end_time = time.time()
     print("Merged pull requests in %s seconds" % (end_time - start_time))
     df.to_csv('output/o3_merged.csv')
+
+    # Users Commented on the pull requests
+    start_time = time.time()
+    df['pull_comment'] = [0] * n
+    pullList = repo.get_pulls(state='all')
+    for pull in pullList:
+        commentList = pull.get_comments()
+        for comment in commentList:
+            if comment.user is not None:
+                name = comment.user.login
+                df.loc[df['dev'] == name, 'pull_comment'] += 1
+    end_time = time.time()
+    print("Commented pull requested in %d seconds" % (end_time - start_time))
+    df.to_csv('output/o4_comment.csv')
