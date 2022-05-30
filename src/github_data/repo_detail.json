@@ -1,0 +1,17 @@
+{
+  "repositories": [
+    {
+      "repo_url" : "fzaninotto/Faker",
+      "authors" : [
+        {"username" : "fzaninotto"},
+        {"username" : "localheinz"}
+      ]
+    },
+    {
+      "repo_url" : "fog/fog",
+      "authors" : [
+        {"username" :  "geemus"}
+      ]
+    }
+  ]
+}
