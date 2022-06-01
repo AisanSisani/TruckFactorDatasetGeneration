@@ -11,26 +11,26 @@ class RepoData:
         self.df = None
         self.normalized_df = None
 
-    def get_normalized_df(self):
+    def get_normalized_df(self, verbose=False):
         if self.normalized_df is None:
-            self.produce_normalized_df()
-        print(self.normalized_df.head())
+            self.produce_normalized_df(verbose)
         return self.normalized_df
 
-    def get_df(self):
+    def get_df(self, verbose=False):
         if self.df is None:
-            self.produce_df()
-        print(self.df.head())
+            self.produce_df(verbose)
         return self.df
 
-    def produce_normalized_df(self):
+    def produce_normalized_df(self, verbose=False):
         df = self.df
         df1 = df.loc[:, df.columns != 'dev']
-        normalized_df = (df1-df1.mean())/df1.std()
+        normalized_df = (df1 - df1.mean()) / df1.std()
         df.loc[:, df.columns != 'dev'] = normalized_df
+        print("Normalized data frame produced:")
+        print(self.normalized_df.head())
         self.normalized_df = df
 
-    def produce_df(self):
+    def produce_df(self, verbose=False):
         g = Github(self.access_token)
 
         repo = g.get_repo(self.repo_url)
@@ -43,6 +43,8 @@ class RepoData:
         # creating developer commit dictionary
         dev_list = [dev.login for dev in devList]
         n = len(dev_list)
+        if verbose:
+            print(f"Number of developers in {self.repo_url}")
 
         '''
         dev_commit_dict = dict(zip(dev_list, [0]*len(dev_list)))
@@ -76,7 +78,13 @@ class RepoData:
         df['deletion'] = [0] * n
 
         start_time = time.time()
+        commit_list_size = len(commitList)
+        if verbose:
+            print(f"Number of Commits:{commit_list_size} for {self.repo_url}")
+        i = 0
         for commit in commitList:
+            if verbose:
+                print(f"Commit {i}/{commit_list_size} for {self.repo_url}")
             if commit.author is not None:
                 name = commit.author.login
                 # df[df['dev'] == name]['commit'] += 1 # gives warning
@@ -126,7 +134,7 @@ class RepoData:
         # print("Commented pull requested in %d seconds" % (end_time - start_time))
         # df.to_csv('output/o4_comment.csv')
 
-        self.df =  df
+        self.df = df
 
 
 def main():
@@ -137,6 +145,7 @@ def main():
     # TODO change the path to a convention
     df.to_csv(f'../output/repo_{repo_url}.csv')
     print("The csv file has been created successfully in the output/")
+
 
 if __name__ == "__main__":
     main()
