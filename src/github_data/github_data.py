@@ -2,13 +2,14 @@ import json
 import pandas as pd
 
 import repo_data
+from github import Github
 
 
 class GithubData:
-    def __init__(self, data, access_token):
+    def __init__(self, data, github_con):
         self.df = None
         self.data = data
-        self.access_token = access_token
+        self.github_con = github_con
 
     def produce_df(self, verbose=False):
         df = pd.DataFrame()
@@ -23,7 +24,7 @@ class GithubData:
 
             if verbose:
                 print(f"The features for {repo_url} is being gathered...")
-            repo_d = repo_data.RepoData(repo_url, self.access_token)
+            repo_d = repo_data.RepoData(repo_url, self.github_con)
             repo_df = repo_d.get_normalized_df(verbose = True)
             if verbose:
                 print(f"The features for {repo_url} has been gathered.")
@@ -67,13 +68,16 @@ def main():
     access_token = json.load(keys_file)['access_token']
     print("\nAccess Token Gained.")
 
-    gd = GithubData(data, access_token)
+    github_con = Github(access_token)
+    print("\nGithub connection created.")
+
+    gd = GithubData(data, github_con)
     df = gd.get_df(verbose=True)
     print("\nData has been gathered.")
 
     # TODO change the path to a convention
     df.to_csv(f'../../output/github.csv')
-    print("The csv file has been created successfully as ../../output/github.csv")
+    print("\nThe csv file has been created successfully as ../../output/github.csv")
 
 
 if __name__ == '__main__':

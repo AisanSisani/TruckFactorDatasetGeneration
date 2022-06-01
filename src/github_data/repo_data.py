@@ -5,9 +5,9 @@ import time
 
 
 class RepoData:
-    def __init__(self, repo_url, access_token):
+    def __init__(self, repo_url, github_con):
         self.repo_url = repo_url
-        self.access_token = access_token
+        self.github_con = github_con
         self.df = None
         self.normalized_df = None
 
@@ -22,6 +22,8 @@ class RepoData:
         return self.df
 
     def produce_normalized_df(self, verbose=False):
+        if self.df is None:
+            self.produce_df()
         df = self.df
         df1 = df.loc[:, df.columns != 'dev']
         normalized_df = (df1 - df1.mean()) / df1.std()
@@ -31,9 +33,9 @@ class RepoData:
         self.normalized_df = df
 
     def produce_df(self, verbose=False):
-        g = Github(self.access_token)
+        github_connection = self.github_con
 
-        repo = g.get_repo(self.repo_url)
+        repo = github_connection.get_repo(self.repo_url)
 
         devList = repo.get_contributors()
         commitList = repo.get_commits(until=datetime.datetime(2015, 8, 25))
@@ -78,7 +80,7 @@ class RepoData:
         df['deletion'] = [0] * n
 
         start_time = time.time()
-        commit_list_size = len(commitList)
+        commit_list_size = commitList.totalCount
         if verbose:
             print(f"Number of Commits:{commit_list_size} for {self.repo_url}")
         i = 0
