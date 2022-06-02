@@ -1,7 +1,9 @@
-from github import Github
 import datetime
 import pandas as pd
 import time
+import tqdm
+
+FINAL_DATE = datetime.datetime(2015, 8, 25)
 
 
 class RepoData:
@@ -23,13 +25,15 @@ class RepoData:
 
     def produce_normalized_df(self, verbose=False):
         if self.df is None:
-            self.produce_df()
+            self.produce_df(verbose)
         df = self.df
         df1 = df.loc[:, df.columns != 'dev']
         normalized_df = (df1 - df1.mean()) / df1.std()
         df.loc[:, df.columns != 'dev'] = normalized_df
-        print("Normalized data frame produced:")
-        print(self.normalized_df.head())
+        self.normalized_df = normalized_df
+        if verbose:
+            print("Normalized data frame produced:")
+            print(self.normalized_df.head())
         self.normalized_df = df
 
     def produce_df(self, verbose=False):
@@ -38,38 +42,15 @@ class RepoData:
         repo = github_connection.get_repo(self.repo_url)
 
         devList = repo.get_contributors()
-        commitList = repo.get_commits(until=datetime.datetime(2015, 8, 25))
-        pullOpenList = repo.get_pulls(state='open')
+        commitList = repo.get_commits(until=FINAL_DATE)
+        pullList = repo.get_pulls(state='all')
         pullClosedList = repo.get_pulls(state='closed')
 
         # creating developer commit dictionary
         dev_list = [dev.login for dev in devList]
         n = len(dev_list)
         if verbose:
-            print(f"Number of developers in {self.repo_url}")
-
-        '''
-        dev_commit_dict = dict(zip(dev_list, [0]*len(dev_list)))
-        start_time = time.time()
-        for commit in commitList:
-                if (commit.author!=None):
-                    dev_commit_dict[commit.author.login] += 1
-        end_time = time.time()
-        print("Execution time is %s seconds" % (end_time-start_time))
-        '''
-
-        '''
-        start_time = time.time()
-        for dev in devList:
-            for commit in commitList:
-                if (commit.author!=None and dev != None):
-                    if (commit.author.login == dev.login):
-                        totalCommits+=1
-            #print(dev.login + "          number of commits = " + str(totalCommits))
-            totalCommits = 0
-        end_time = time.time()
-        print("Execution time is %s seconds" % (end_time-start_time))
-        '''
+            print(f"Number of developers: {n} in {self.repo_url}")
 
         df = pd.DataFrame()
         df['dev'] = dev_list
@@ -81,59 +62,63 @@ class RepoData:
 
         start_time = time.time()
         commit_list_size = commitList.totalCount
-        if verbose:
-            print(f"Number of Commits:{commit_list_size} for {self.repo_url}")
         i = 0
-        for commit in commitList:
-            if verbose:
-                print(f"Commit {i}/{commit_list_size} for {self.repo_url}")
+        for i in tqdm.tqdm(range(commit_list_size), desc="Commit"):
+            commit = commitList[i]
             if commit.author is not None:
                 name = commit.author.login
-                # df[df['dev'] == name]['commit'] += 1 # gives warning
                 df.loc[df['dev'] == name, 'commit'] += 1
                 df.loc[df['dev'] == name, 'addition'] += commit.stats.additions
                 df.loc[df['dev'] == name, 'deletion'] += commit.stats.deletions
         end_time = time.time()
 
-        print("Commits, Addition, and Deletion done in %s seconds" % (end_time - start_time))
+        if verbose:
+            print("Commits done in %s seconds" % (end_time - start_time))
         # df.to_csv('output/o1_commit.csv')
 
         # Open Pull Requests
         start_time = time.time()
         df['pull_open'] = [0] * n
-        for pull in pullOpenList:
-            if pull.created_at < datetime.datetime(2015, 8, 25):
+        for i in tqdm.tqdm(range(pullList.totalCount), desc="Open Pull"):
+            pull = pullList[i]
+            if pull.created_at < FINAL_DATE:
                 if pull.user is not None:
                     name = pull.user.login
                     df.loc[df['dev'] == name, 'pull_open'] += 1
         end_time = time.time()
-        print("Open pull requests in %s seconds" % (end_time - start_time))
+        if verbose:
+            print("Open pull requests in %s seconds" % (end_time - start_time))
         # df.to_csv('output/o2_open.csv')
 
         # Closed Pull Requests
         start_time = time.time()
         df['pull_merged'] = [0] * n
-        for pull in pullClosedList:
-            if pull.created_at < datetime.datetime(2015, 8, 25):
+
+        for i in tqdm.tqdm(range(pullClosedList.totalCount), desc="Merged Pull"):
+            pull = pullClosedList[i]
+            if pull.created_at < FINAL_DATE:
                 if pull.merged_by is not None:
                     name = pull.merged_by.login
                     df.loc[df['dev'] == name, 'pull_merged'] += 1
         end_time = time.time()
-        print("Merged pull requests in %s seconds" % (end_time - start_time))
+        if verbose:
+            print("Merged pull requests in %s seconds" % (end_time - start_time))
         # df.to_csv('output/o3_merged.csv')
 
         # Users Commented on the pull requests
         # start_time = time.time()
         # df['pull_comment'] = [0] * n
-        # pullList = repo.get_pulls(state='all')
-        # for pull in pullList:
-        #     commentList = pull.get_comments()
-        #     for comment in commentList:
-        #         if comment.user is not None:
-        #             name = comment.user.login
-        #             df.loc[df['dev'] == name, 'pull_comment'] += 1
+        # for i in tqdm.tqdm(range(pullList.totalCount), desc="Pull Comment"):
+        #     pull = pullList[i]
+        #     if pull.created_at < FINAL_DATE:
+        #         commentList = pull.get_comments()
+        #         for comment in commentList:
+        #             if comment.user is not None:
+        #                 name = comment.user.login
+        #                 df.loc[df['dev'] == name, 'pull_comment'] += 1
         # end_time = time.time()
-        # print("Commented pull requested in %d seconds" % (end_time - start_time))
+        # if verbose:
+        #     print("Commented pull requested in %d seconds" % (end_time - start_time))
         # df.to_csv('output/o4_comment.csv')
 
         self.df = df

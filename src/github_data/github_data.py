@@ -25,7 +25,7 @@ class GithubData:
             if verbose:
                 print(f"The features for {repo_url} is being gathered...")
             repo_d = repo_data.RepoData(repo_url, self.github_con)
-            repo_df = repo_d.get_normalized_df(verbose = True)
+            repo_df = repo_d.get_normalized_df(verbose=True)
             if verbose:
                 print(f"The features for {repo_url} has been gathered.")
                 print("The data frame:")
@@ -44,6 +44,9 @@ class GithubData:
 
             # TODO: deprecated  -replace with pandas concat
             df.append(repo_df)
+            df.to_csv(f'../../output/github_{repo_url}.csv')
+            print(f"\nThe csv file has been created successfully as ../../output/github{repo_url}.csv")
+
 
     def get_df(self, verbose=False):
         if self.df is None:
