@@ -1,7 +1,8 @@
 {
   "repositories": [
     {
-      "id": "1",
+      "id": "10",
+      "status": 0,
       "repo_url" : "resque/resque",
       "authors" : [
         {"username" :  "defunkt"},
@@ -13,6 +14,8 @@
       ]
     },
     {
+      "id": "12",
+      "status": 0,
       "repo_url" : "ipython/ipython",
       "authors" : [
         {"username" :  "minrk"},

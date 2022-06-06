@@ -1,6 +1,8 @@
 {
   "repositories": [
     {
+      "id": "10",
+      "status": 0,
       "repo_url" : "resque/resque",
       "authors" : [
         {"username" :  "defunkt"},
@@ -9,6 +11,17 @@
         {"username" :  "steveklabnik"},
         {"username" :  "einarj"},
         {"username" :  "hone"}
+      ]
+    },
+    {
+      "id": "12",
+      "status": 0,
+      "repo_url" : "ipython/ipython",
+      "authors" : [
+        {"username" :  "minrk"},
+        {"username" :  "takluyver"},
+        {"username" :  "ellisonbg"},
+        {"username" :  "jdfreder"}
       ]
     }
   ]

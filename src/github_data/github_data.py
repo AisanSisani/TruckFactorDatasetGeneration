@@ -12,78 +12,93 @@ class GithubData:
         self.github_con = github_con
 
     def produce_df(self, verbose=False):
-        df = pd.DataFrame()
+        try:
+            df = pd.read_csv(f'../../output/github.csv', index_col=False)
+        except:
+            df = pd.DataFrame()
+            print("> No dataframe was found at ../../output/github.csv")
+        else:
+            print("> Dataframe loaded from ../../output/github.csv")
 
         repos_size = len(self.data['repositories'])
-        i = 1
-        for repo in self.data['repositories']:
-            repo_url = repo['repo_url']
-            if verbose:
-                print(f"Accessing {i}/{repos_size}: {repo_url}")
-                i = i + 1
-
-            if verbose:
-                print(f"The features for {repo_url} is being gathered...")
-            repo_d = repo_data.RepoData(repo_url, self.github_con)
-            repo_df = repo_d.get_normalized_df(verbose=True)
-            if verbose:
-                print(f"The features for {repo_url} has been gathered.")
-                print("The data frame:")
-                print(repo_df.head())
-
-            repo_authors = repo['authors']
-            if verbose:
-                print(f"Number of Authors: {len(repo_authors)} for {repo_url}")
-
-            repo_df['Author'] = [0] * repo_df.shape[0]
-            for author in repo_authors:
-                name = author['username']
+        for i in range(repos_size):
+            repo = self.data['repositories'][i]
+            try:
+                repo_url = repo['repo_url']
                 if verbose:
-                    print(name)
-                repo_df.loc[repo_df['dev'] == name, 'Author'] = 1
+                    print(f"> {i + 1}/{repos_size}: {repo_url}")
 
-            print("Repo df:")
-            print(repo_df.head())
-            # TODO: deprecated  -replace with pandas concat
-            df = df.append(repo_df)
-            df.to_csv(f'../../output/github_{repo_url.split("/")[1]} .csv')
-            print(f"\nThe csv file has been created successfully as ../../output/github{repo_url}.csv")
+                if repo['status'] == 1:
+                    print(f"> {repo_url} has been gathered before.")
+                    continue
+
+                if verbose:
+                    print(f"> The features for {repo_url} is being gathered...")
+                repo_d = repo_data.RepoData(repo_url, self.github_con)
+                repo_df = repo_d.get_normalized_df(verbose=True)
+                if verbose:
+                    print(f"> The features for {repo_url} has been gathered.")
+
+                repo_authors = repo['authors']
+                repo_df['author'] = [0] * repo_df.shape[0]
+                for author in repo_authors:
+                    name = author['username']
+                    repo_df.loc[repo_df['developer'] == name, 'author'] = 1
+
+                # deprecated  -replace with pandas concat
+                # df = df.append(repo_df)
+                df = pd.concat([df, repo_df], ignore_index=True)
+
+                repo_url_s = repo_url.split("/")
+                repo_df.to_csv(f'../../output/repos/{repo_url_s[0]}_{repo_url_s[1]}.csv', index=False)
+                if verbose:
+                    print(f"> The dataframe for repository {repo_url} is saved at ../../output/repos/")
+
+            except:
+                print(f"> Error happened while gathering features for repo {repo_url}")
+            else:
+                df.to_csv(f'../../output/github.csv', index=False)
+                if verbose:
+                    print(f"> The csv file has been updated successfully: ../../output/github.csv")
+                self.data['repositories'][i]['status'] = 1
 
         self.df = df
 
     def get_df(self, verbose=False):
         if self.df is None:
+            if verbose:
+                print("> Creating github dataframe.")
             self.produce_df(verbose)
         return self.df
 
 
 def main():
-    # get the list of repos
-    # get the list of authors for each repo
-    df = pd.DataFrame()
-    df.to_csv(f'../../output/github.csv')
     print(f"The output csv file will be saved as ../../output/github.csv")
 
-    repo_detail_file = open('data/repo_detail.json')
-    data = json.load(repo_detail_file)
-    print("\nRepo Details:")
+    with open('data/repo_detail.json', "r") as repo_detail_file:
+        data = json.load(repo_detail_file)
+        print("Repo details file loaded.")
+    print("Repo Details:")
     print(data)
 
     # TODO print the error that the keys.json should be generated first
     keys_file = open('data/keys.json')
     access_token = json.load(keys_file)['access_token']
-    print("\nAccess Token Gained.")
+    print("Access token loaded.")
 
     github_con = Github(access_token)
-    print("\nGithub connection created.")
+    print("Github connection created.")
 
     gd = GithubData(data, github_con)
     df = gd.get_df(verbose=True)
-    print("\nData has been gathered.")
 
     # TODO change the path to a convention
-    df.to_csv(f'../../output/github.csv')
-    print("\nThe csv file has been created successfully as ../../output/github.csv")
+    df.to_csv(f'../../output/github.csv', index=False)
+    print("../../output/github.csv created.")
+
+    with open('data/repo_detail.json', "w") as outfile:
+        json.dump(gd.data, outfile)
+        print("Repo detail file updated with status")
 
 
 if __name__ == '__main__':
