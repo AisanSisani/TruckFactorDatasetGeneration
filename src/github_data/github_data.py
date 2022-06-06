@@ -42,11 +42,14 @@ class GithubData:
                     print(name)
                 repo_df.loc[repo_df['dev'] == name, 'Author'] = 1
 
+            print("Repo df:")
+            print(repo_df.head())
             # TODO: deprecated  -replace with pandas concat
-            df.append(repo_df)
-            df.to_csv(f'../../output/github_{repo_url}.csv')
+            df = df.append(repo_df)
+            df.to_csv(f'../../output/github_{repo_url.split("/")[1]} .csv')
             print(f"\nThe csv file has been created successfully as ../../output/github{repo_url}.csv")
 
+        self.df = df
 
     def get_df(self, verbose=False):
         if self.df is None:
