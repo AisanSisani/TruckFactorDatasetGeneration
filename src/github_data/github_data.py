@@ -4,6 +4,8 @@ import pandas as pd
 import repo_data
 from github import Github
 
+from colorama import Fore, Style
+
 
 class GithubData:
     def __init__(self, data, github_con):
@@ -54,8 +56,10 @@ class GithubData:
                 if verbose:
                     print(f"> The dataframe for repository {repo_url} is saved at ../../output/repos/")
 
-            except:
-                print(f"> Error happened while gathering features for repo {repo_url}")
+            except Exception as e:
+                print(Fore.RED + f"> Error happened while gathering features for repo {repo_url}")
+                print(Style.RESET_ALL, end='')
+                print(e)
             else:
                 df.to_csv(f'../../output/github.csv', index=False)
                 if verbose:
