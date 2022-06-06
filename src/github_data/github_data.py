@@ -61,6 +61,9 @@ class GithubData:
                 if verbose:
                     print(f"> The csv file has been updated successfully: ../../output/github.csv")
                 self.data['repositories'][i]['status'] = 1
+                with open('data/repo_detail.json', "w") as outfile:
+                    json.dump(self.data, outfile)
+                    print("Repo detail file updated with new status")
 
         self.df = df
 
