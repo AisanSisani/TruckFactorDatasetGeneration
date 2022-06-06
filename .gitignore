@@ -1,4 +1,4 @@
 .idea
 /src/github_data/data/keys.json
-output
+output/*
 src/github_data/data/repo_detail.json
