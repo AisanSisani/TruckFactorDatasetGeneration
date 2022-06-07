@@ -6,6 +6,8 @@ from github import Github
 
 from colorama import Fore, Style
 
+import traceback
+
 
 class GithubData:
     def __init__(self, data, github_con):
@@ -56,10 +58,10 @@ class GithubData:
                 if verbose:
                     print(f"> The dataframe for repository {repo_url} is saved at ../../output/repos/")
 
-            except Exception as e:
+            except Exception:
                 print(Fore.RED + f"> Error happened while gathering features for repo {repo_url}")
                 print(Style.RESET_ALL, end='')
-                print(e)
+                traceback.print_exc()
             else:
                 df.to_csv(f'../../output/github.csv', index=False)
                 if verbose:
