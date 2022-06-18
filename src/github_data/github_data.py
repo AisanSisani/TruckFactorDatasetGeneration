@@ -36,6 +36,10 @@ class GithubData:
                     print(f"> {repo_url} has been gathered before.")
                     continue
 
+                if repo['status'] == -1:
+                    print(f"> {repo_url} is requested to be skipped.")
+                    continue
+
                 if verbose:
                     print(f"> The features for {repo_url} is being gathered...")
                 repo_d = repo_data.RepoData(repo_url, self.github_con)

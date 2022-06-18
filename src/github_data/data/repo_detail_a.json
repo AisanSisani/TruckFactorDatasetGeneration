@@ -26,6 +26,7 @@
       ]
     },
     {
+
       "id": "13",
       "status": 2,
       "repo_url" : "saltstack/salt",
@@ -59,6 +60,24 @@
         {"username" :  "Jon Leighton"},
         {"username" :  "Łukasz Strzałkowski"},
         {"username" :  "Joshua Peek"}
+]},
+    {
+      "id": "17",
+      "status": 0,
+      "repo_url" : "composer/composer",
+      "authors" : [
+        {"username" :  "Seldaek"},
+        {"username" :  "naderman"}
+      ]
+    },
+    {
+      "id": "21",
+      "status": 0,
+      "repo_url" : "facebook/osquery",
+      "authors" : [
+        {"username" :  "theopolis"},
+        {"username" :  "marpaia"}
+
       ]
     }
   ]
