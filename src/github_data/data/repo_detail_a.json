@@ -23,6 +23,24 @@
         {"username" :  "ellisonbg"},
         {"username" :  "jdfreder"}
       ]
+    },
+    {
+      "id": "17",
+      "status": 0,
+      "repo_url" : "composer/composer",
+      "authors" : [
+        {"username" :  "Seldaek"},
+        {"username" :  "naderman"}
+      ]
+    },
+    {
+      "id": "21",
+      "status": 0,
+      "repo_url" : "facebook/osquery",
+      "authors" : [
+        {"username" :  "theopolis"},
+        {"username" :  "marpaia"}
+      ]
     }
   ]
 }
