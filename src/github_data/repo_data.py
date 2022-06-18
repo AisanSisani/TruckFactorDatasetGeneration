@@ -86,7 +86,7 @@ class RepoData:
                     last_date = datetime.datetime.strptime(elements[1].strip(), '%Y-%m-%d')
                     df.loc[df['developer'] == name, 'days_first_to_last_commit'] = (last_date\
                                                                                    - commit.get_statuses()[0].created_at).days
-        #df = df.drop(columns='last_day')
+        df = df.drop(columns='last_day')
         end_time = time.time()
 
         if verbose:
