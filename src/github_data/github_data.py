@@ -17,12 +17,12 @@ class GithubData:
 
     def produce_df(self, verbose=False):
         try:
-            df = pd.read_csv(f'../../output/github.csv', index_col=False)
+            df = pd.read_csv(f'../../files/github.csv', index_col=False)
         except:
             df = pd.DataFrame()
-            print("> No dataframe was found at ../../output/github.csv")
+            print("> No dataframe was found at ../../files/github.csv")
         else:
-            print("> Dataframe loaded from ../../output/github.csv")
+            print("> Dataframe loaded from ../../files/github.csv")
 
         repos_size = len(self.data['repositories'])
         for i in range(repos_size):
@@ -57,19 +57,19 @@ class GithubData:
                 # df = df.append(repo_df)
                 df = pd.concat([df, repo_df], ignore_index=True)
 
-                repo_url_s = repo_url.split("/")
-                repo_df.to_csv(f'../../output/repos/{repo_url_s[0]}_{repo_url_s[1]}.csv', index=False)
+
+                repo_df.to_csv(f'../../files/repos_complete/{repo_d.repo_name}.csv', index=False)
                 if verbose:
-                    print(f"> The dataframe for repository {repo_url} is saved at ../../output/repos/")
+                    print(f"> The dataframe for repository {repo_url} is saved at ../../files/repos/")
 
             except Exception:
                 print(Fore.RED + f"> Error happened while gathering features for repo {repo_url}")
                 print(Style.RESET_ALL, end='')
                 traceback.print_exc()
             else:
-                df.to_csv(f'../../output/github.csv', index=False)
+                df.to_csv(f'../../files/github.csv', index=False)
                 if verbose:
-                    print(f"> The csv file has been updated successfully: ../../output/github.csv")
+                    print(f"> The csv file has been updated successfully: ../../files/github.csv")
                 self.data['repositories'][i]['status'] = 1
                 with open('data/repo_detail.json', "w") as outfile:
                     json.dump(self.data, outfile)
@@ -86,7 +86,7 @@ class GithubData:
 
 
 def main():
-    print(f"The output csv file will be saved as ../../output/github.csv")
+    print(f"The files csv file will be saved as ../../files/github.csv")
 
     with open('data/repo_detail.json', "r") as repo_detail_file:
         data = json.load(repo_detail_file)
@@ -106,8 +106,8 @@ def main():
     df = gd.get_df(verbose=True)
 
     # TODO change the path to a convention
-    df.to_csv(f'../../output/github.csv', index=False)
-    print("../../output/github.csv created.")
+    df.to_csv(f'../../files/github.csv', index=False)
+    print("../../files/github.csv created.")
 
     with open('data/repo_detail.json', "w") as outfile:
         json.dump(gd.data, outfile)

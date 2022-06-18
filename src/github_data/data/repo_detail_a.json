@@ -60,7 +60,16 @@
         {"username" :  "Jon Leighton"},
         {"username" :  "Łukasz Strzałkowski"},
         {"username" :  "Joshua Peek"}
-]},
+]},{
+      "id": "16",
+      "status": 0,
+      "vote": "AP",
+      "repo_url" : "clojure/clojure",
+      "authors" : [
+        {"username" :  "Rich Hickey"},
+        {"username" :  "Stuart Halloway"}
+      ]
+    },
     {
       "id": "17",
       "status": 0,
