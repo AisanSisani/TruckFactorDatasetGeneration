@@ -61,9 +61,13 @@ class RepoData:
         df['commit'] = [0] * n
         df['addition'] = [0] * n
         df['deletion'] = [0] * n
+        df['days_since_last_commit'] = [0] * n
+        df['days_first_to_last_commit'] = [0] * n
+        df['last_day'] = [0] * n
 
         start_time = time.time()
         commit_list_size = commitList.totalCount
+
         i = 0
         for i in tqdm.tqdm(range(commit_list_size), desc="Commit"):
             commit = commitList[i]
@@ -72,6 +76,17 @@ class RepoData:
                 df.loc[df['developer'] == name, 'commit'] += 1
                 df.loc[df['developer'] == name, 'addition'] += commit.stats.additions
                 df.loc[df['developer'] == name, 'deletion'] += commit.stats.deletions
+                if (commit.get_statuses().totalCount > 0):
+                    if (df.loc[df['developer'] == name, 'last_day'].any() == 0):
+                        df.loc[df['developer'] == name, 'last_day'] = commit.get_statuses()[0].created_at
+                        df.loc[df['developer'] == name, 'days_since_last_commit'] = (FINAL_DATE\
+                                                                                    - commit.get_statuses()[0].created_at).days
+
+                    elements = str(df.loc[df['developer'] == name, 'last_day']).split()
+                    last_date = datetime.datetime.strptime(elements[1].strip(), '%Y-%m-%d')
+                    df.loc[df['developer'] == name, 'days_first_to_last_commit'] = (last_date\
+                                                                                   - commit.get_statuses()[0].created_at).days
+        #df = df.drop(columns='last_day')
         end_time = time.time()
 
         if verbose:
