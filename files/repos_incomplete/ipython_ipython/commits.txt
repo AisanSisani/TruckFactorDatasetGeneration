@@ -1,0 +1,49 @@
+  5749	Benjamin Ragan-Kelley
+  2805	Thomas Kluyver
+  1894	Jonathan Frederic
+  1828	Fernando Perez
+  1809	Matthias Bussonnier
+  1778	Brian E. Granger
+   802	Ville M. Vainio
+   656	Paul Ivanov
+   287	Evan Patterson
+   213	Bradley M. Froehle
+   211	Jessica B. Hamrick
+   198	Jason Grout
+   192	Damián Avila
+   180	Gael Varoquaux
+   136	Sylvain Corlay
+   135	Takafumi Arakaki
+   114	Walter Doerwald
+   111	Jörgen Stenarson
+    94	Kyle Kelley
+    75	Scott Sanderson
+    74	Laurent Dufréchou
+    61	Zachary Sailer
+    54	Robert Kern
+    52	Barry Wark
+    52	Julian Taylor
+    49	Stefan van der Walt
+    39	David P. Sanders
+    39	Jonathan Taylor
+    35	Gordon Ball
+    35	Greg Caporaso
+    35	chebee7i
+    32	David Warde-Farley
+    32	Thomas Spura
+    31	Doug Blank
+    28	Pablo de Oliveira
+    25	Nicholas Bollweg
+    24	Mathieu
+    22	Daniel B. Vasquez
+    22	Jan Schulz
+    22	Julia Evans
+    21	Jens Hedegaard Nielsen
+    20	Erik Tollerud
+    20	Jakob Gager
+    20	Manuel Riel
+    20	Nicolas Rougier
+    19	Satrajit Ghosh
+    18	Aaron Meurer
+    18	Kester Tong
+    18	Omar Andrés Zapata Mesa

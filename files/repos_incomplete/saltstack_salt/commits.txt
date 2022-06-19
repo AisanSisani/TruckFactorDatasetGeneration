@@ -1,0 +1,156 @@
+ 16550	Thomas S Hatch
+  6781	Pedro Algarvio
+  3416	Joseph Hall
+  3105	Erik Johnson
+  2490	Mike Place
+  2339	Colton Myers
+  1785	Seth House
+  1746	Nitin Madhok
+  1601	David Boucha
+  1260	Justin Findlay
+  1223	Thomas Jackson
+  1201	rallytime
+   991	Chris Rebert
+   741	Nicole Thomas
+   638	Samuel M Smith
+   542	C. R. Oldham
+   446	Jeff Schroeder
+   428	Daniel Wallace
+   414	Bo Maryniuk
+   409	Gareth J. Greenaway
+   384	Mathieu Le Marec - Pasquet
+   334	Matthew Williams
+   280	jfindlay
+   256	Henrik Holmboe
+   240	Jayesh Kariya
+   231	vs
+   225	Sean Channel
+   156	Ryan Lane
+   156	shadowfax-chc
+   145	Damian Myerscough
+   139	Corey Quinn
+   134	Forrest Alvarez
+   133	twangboy
+   130	Jack Kuan
+   129	Bret Palsson
+   125	Samuel Smith
+   124	Denis Generalov
+   123	Elias Probst
+   118	Dan Colish
+   107	Andrea-Redi Tsarida
+   102	Nicolas Delaby
+   100	Clint Armstrong
+   100	regilero
+    99	Aaron Tygart
+    94	Michael Steed
+    92	Evan Borgstrom
+    91	Robert Keizer
+    90	Niels Abspoel
+    88	Steve Weber
+    86	Arnold Bechtoldt
+    85	Omer Katz
+    84	Aditya Kulkarni
+    83	Jeff Hutchins
+    83	mafro
+    80	Clint Savage
+    79	Jorge Schrauwen
+    78	Florian Ermisch
+    77	Erik Nolte
+    75	Ronald van Zantvoort
+    72	Christer Edwards
+    70	Jacob Hammons
+    69	Baiju Muthukadan
+    68	Dmitry Kuzmenko
+    67	Michael Birtwell
+    63	Scott Walton
+    63	Thayne Harbaugh
+    58	Claudiu Popescu
+    58	Matthew Hopkins
+    57	Mickey Malone
+    55	Tor Hveem
+    54	pengyao
+    53	Markus Gattol
+    53	ranl
+    52	Rupesh Tare
+    51	Fred Reimer
+    51	K Jonathan Harker
+    50	Nahum Shalman
+    50	Rahul Handay
+    50	Xavier Barbosa
+    49	David Anderson
+    49	Frank Klaassen
+    49	Roman Inflianskas
+    49	ran
+    48	Ollie Walsh
+    47	Eric Poelke
+    46	Bruno Binet
+    45	Andreas Lutro
+    45	mguegan
+    44	Daniel Bradshaw
+    43	Daniel Hobley
+    42	Volker Schwicking
+    41	David Lindquist
+    41	Ted Strzalkowski
+    40	Stephen Spencer
+    40	faust
+    39	Bruno Clermont
+    39	David Bishop
+    38	Arthur Lutz
+    37	Jeremy Rosenbaum
+    36	Joe Healy
+    35	Amir Pakdel
+    35	Øyvind Saltvik
+    34	Christophe Drevet-Droguet
+    34	Hung Nguyen Viet
+    34	Jens Rantil
+    34	John Albietz
+    34	Kaithar
+    34	Shane Lee
+    33	Corin Kochenower
+    33	Michael Lustfield
+    32	Alexey Ivanov
+    32	Grischa Meyer
+    32	Kevin Bowling
+    31	Cimarron Mittelsteadt
+    31	Mathias Gug
+    31	Samuel Lai
+    30	Antoine Jacoutot
+    30	Emile 'iMil' Heitor
+    30	Jeffrey C. Ollie
+    30	Roberto Aguilar
+    30	Ulrich Dangel
+    30	Viet Hung Nguyen
+    30	root
+    29	Michael Persson
+    29	Nick Lang (Salt minion)
+    28	Aneesh Agrawal
+    28	Tom Vaughan
+    28	jond64
+    28	ydavid365
+    27	Christopher A. Stelma
+    27	Flavian
+    27	Rafael Uzarowski
+    27	Yash
+    26	Ahmed Kamal
+    26	Dave Rawks
+    26	Dmitry Malinovsky
+    26	Jason R. McNeil
+    26	KennethWilke
+    25	Alexander Haase
+    25	Colin Johnson
+    25	Khris Richardson
+    25	Nick Lang
+    25	hvnsweeting
+    25	iquaba
+    25	ror6ax
+    24	Joe Julian
+    24	Tarjei Husøy
+    23	Alan Garfield
+    23	Andrew Hammond
+    23	Andrew Kuhnhausen
+    23	Eivind Uggedal
+    23	Grier Johnson
+    23	Robert Davis
+    23	Romeo Theriault
+    23	Sergey Kizunov
+    23	Tim O'Guin

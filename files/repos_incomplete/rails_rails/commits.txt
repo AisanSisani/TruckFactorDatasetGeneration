@@ -1,0 +1,382 @@
+  5520	Aaron Patterson
+  5158	Rafael Mendonça França
+  4115	Jeremy Kemper
+  4027	David Heinemeier Hansson
+  2926	José Valim
+  2280	Xavier Noria
+  1873	Santiago Pastorino
+  1818	Yves Senn
+  1755	Carlos Antonio da Silva
+  1234	Vijay Dev
+  1207	Jon Leighton
+  1162	Joshua Peek
+  1022	Pratik Naik
+   808	Sean Griffin
+   769	Michael Koziarski
+   727	Guillermo Iguaran
+   638	Andrew White
+   607	Arun Agrawal
+   598	Piotr Sarnacki
+   548	Emilio Tagua
+   538	Ryan Bigg
+   477	Rick Olson
+   472	Akira Matsuda
+   452	Zachary Scott
+   417	Godfrey Chan
+   389	Francesco Rodriguez
+   377	Neeraj Singh
+   372	Jamis Buck
+   322	Marcel Molina
+   313	Charlie Somerville
+   302	Yehuda Katz
+   271	kennyj
+   270	Mikel Lindsaar
+   262	Prem Sichanugrist
+   255	Nicholas Seckar
+   249	Matthew Draper
+   242	Mike Gunderloy
+   242	wycats
+   241	Steve Klabnik
+   238	Robin Dupret
+   234	Vipul A M
+   213	Carl Lerche
+   193	Arthur Neves
+   192	Timm
+   190	Nick Kallen
+   188	Yehuda Katz + Carl Lerche
+   184	Abdelkader Boudih
+   161	Frederick Cheung
+   161	schneems
+   159	Sebastian Martinez
+   156	Łukasz Strzałkowski
+   149	Prathamesh Sonpatki
+   140	Oscar Del Ben
+   139	Josh Kalderimis
+   137	Bryan Helmkamp
+   125	Sergey Nartimov
+   123	Alexey Vakhov
+   123	Carlhuda
+   120	Kasper Timm Hansen
+   120	claudiob
+   118	yui-knk
+   116	Arthur Nogueira Neves
+   114	yuuji.yaginuma
+   111	Vishnu Atrai
+   110	Sven Fuchs
+   109	eileencodes
+   107	Hongli Lai (Phusion)
+   106	Sam Stephenson
+   102	Jaime Iniesta
+    97	Geoff Buesing
+    96	Tarmo Tänav
+    95	Bogdan Gusiev
+    94	Ernie Miller
+    94	Tobias Lütke
+    93	Guo Xiang Tan
+    89	Ryuta Kamizono
+    88	Damien Mathieu
+    88	Rizwan Reza
+    87	Juanito Fatas
+    85	Akshay Vishnoi
+    83	wangjohn
+    82	Raimonds Simanovskis
+    80	Aman Gupta
+    78	Gonçalo Silva
+    77	Leon Breedt
+    76	Aditya Sanghi
+    76	thedarkone
+    74	Kuldeep Aggarwal
+    73	Yasuo Honda
+    68	Jason Noble
+    65	Vasiliy Ermolovich
+    63	Marc-Andre Lafortune
+    63	Thomas Fuchs
+    61	Agis Anastasopoulos
+    61	Mehmet Emin İNAÇ
+    61	Trevor Turk
+    60	Daniel Schierbeck
+    60	Gaurish Sharma
+    59	José Valim and Mikel Lindsaar
+    59	Richard Schneeman
+    58	Joost Baaij
+    58	rick
+    57	Jon Atack
+    57	Mislav Marohnić
+    56	CassioMarques
+    56	Cristian Bica
+    56	Eloy Duran
+    53	James Miller
+    52	brainopia
+    50	Ben Orenstein
+    50	Ben Woosley
+    50	Matt Jones
+    50	Paul Nikitochkin
+    50	gbuesing
+    50	rohit
+    48	Aditya Kapoor
+    48	Greg Ose
+    48	Hendy Tanata
+    48	Waynn Lue
+    47	Mikhail Dieterle
+    47	Ray Baxter
+    46	David Chelimsky
+    46	miloops
+    44	Jeffrey Hardy
+    44	Zuhao Wan
+    43	Andreas Scherer
+    43	Karel Minarik
+    43	Richard Hulse
+    43	robertomiranda
+    42	Dirkjan Bussink
+    42	Nick Sieger
+    42	Norman Clarke
+    41	Franck Verrot
+    41	Lauro Caetano
+    41	Sam Ruby
+    40	Cheah Chu Yeow
+    39	Brian Cardarella
+    39	Yuki Nishijima
+    38	Jason Noble & Ralph Shnelvar
+    37	Brian Lopez
+    37	Rashmi Yadav
+    37	Tore Darell
+    36	John Firebaugh
+    36	Mark J. Titorenko
+    36	Scott Barron
+    35	Javan Makhmali
+    35	Jeff Dean
+    35	Manfred Stienstra
+    35	Philip Arndt
+    34	Andre Arko
+    34	Bob Remeika
+    34	Erik Michaels-Ober
+    33	Erik St. Martin
+    33	Thiago Pradi
+    32	Genadi Samokovarov
+    32	Matt Jankowski
+    32	Sam Pohlenz
+    32	lest
+    31	Gosha Arinich
+    31	JudeArasu
+    31	Karunakar (Ruby)
+    31	Stefan Sprenger
+    30	Eileen M. Uchitelle
+    30	Jonathan Roes
+    30	Matt Duncan
+    30	Paco Guzman
+    30	Uģis Ozols
+    29	Andrew Kaspick
+    29	Diego Carrion
+    29	Josh Susser
+    29	Roque Pinel
+    28	Claudio B.
+    28	Clemens Kofler
+    28	Jean Boussier
+    28	Ken Collins
+    28	Rohit Arondekar
+    27	Anton Davydov
+    27	Nick Sutterer
+    26	AvnerCohen
+    26	Dmitry Vorotilin
+    26	Fred Wu
+    26	Kir Shatrov
+    26	Subba Rao Pasupuleti
+    25	Hrvoje Šimić
+    25	Luca Guidi
+    24	Mike Perham
+    24	Ryan Davis
+    24	Thiago Pinto
+    24	Tom Stuart
+    24	eparreno
+    23	Alexey Muranov
+    23	Andy Lindeman
+    23	Angelo capilleri
+    23	Brian Durand
+    23	Mauro George
+    23	Pablo Torres
+    23	Rajarshi Das
+    23	Rajinder Yadav
+    23	Stephen St. Martin
+    23	aditya-kapoor
+    22	Andrey Nering
+    22	Harshad Sabne
+    22	Teng Siong Ong
+    22	Viktar Basharymau
+    22	Will Bryant
+    22	Wojciech Wnętrzak
+    21	Alexey Gaziev
+    21	Anupam Choudhury
+    21	Chad Woolley
+    21	George Ogata
+    21	Lucas Mazza
+    21	Mohammad Typaldos
+    20	Chris Kampmeier
+    20	Dmitry Polushkin
+    20	Evan Farrar
+    20	Marcelo Silveira
+    20	Rafael Magana
+    20	Sam Umbach
+    20	Takehiro Adachi
+    19	Anil Wadghule
+    19	Ankit Gupta
+    19	Erich Menge
+    19	Jay Pignata
+    19	Jeff Kreeftmeijer
+    19	Ryan Bates
+    19	Ryunosuke SATO
+    19	Tom Kadwill
+    18	Dmitriy Kiriyenko
+    18	Jan De Poorter
+    18	Jorge Bejar
+    18	Josef Šimánek
+    18	Lawrence Pit
+    18	Santiago Pastorino and José Ignacio Costa
+    18	Yaroslav Markin
+    18	mhutchin
+    17	Alvaro Pereyra
+    17	Andrey Deryabin
+    17	Angelo Capilleri
+    17	Cody Fauser
+    17	Gabe da Silveira
+    17	Gaurav Sharma
+    17	Jakub Kuźma
+    17	Jose and Yehuda
+    17	Josiah Ivey
+    17	Krekoten' Marjan
+    17	Lachlan Sylvester
+    17	Lars Kanis
+    17	Mark Rushakoff
+    17	Murray Steele
+    17	Nihad Abbasov
+    17	Semyon Perepelitsa
+    16	Aditya Chadha
+    16	Arturo Pie
+    16	Christos Zisopoulos
+    16	Florian Weber
+    16	Joseph Pecoraro
+    16	Marcelo Giorgi
+    16	Rodrigo Rosenfeld Rosas
+    16	Santosh Wadghule
+    16	Sunny Ripert
+    16	T.J. Schuck
+    16	Tom Lea
+    15	Chris Eppstein
+    15	Christopher Meiklejohn
+    15	Dan Gebhardt
+    15	David Lee
+    15	Henrik N
+    15	Iain Hecker
+    15	Jonathan del Strother
+    15	Kassio Borges
+    15	Ronak Jangir
+    15	Sammy Larbi
+    14	Anuj Dutta
+    14	Benjamin Fleischer
+    14	Egor Homakov
+    14	Francis Go
+    14	James Mead
+    14	Jeroen van Dijk
+    14	Josep M. Bach
+    14	Kristian Freeman
+    14	Mark Thomson
+    14	Matthew Rudy Jacobs
+    14	Michael S. Klishin
+    14	Mike Dalessio
+    14	Peter Suschlik
+    14	R.T. Lechow
+    14	Tamir Duberstein
+    14	Terence Lee
+    14	thoefer
+    13	Agis-
+    13	Aleksey Magusev
+    13	Dalibor Nasevic
+    13	Eugene Gilburg
+    13	Eugene Pimenov
+    13	Federico Ravasio
+    13	Gaston Ramos
+    13	George Claghorn
+    13	Hugo Peixoto
+    13	Jo Liss
+    13	Manuel Menezes de Sequeira
+    13	Mike Breen
+    13	Nicholas Rowe
+    13	Olek Janiszewski
+    13	Rahul P. Chaudhari
+    13	Rolf Timmermans
+    13	Sushruth Sivaramakrishnan
+    13	Tekin Suleyman
+    13	Victor Costan
+    13	Waseem Ahmad
+    13	Wincent Colaiuta
+    13	athonlab
+    13	dmathieu
+    12	Adam Roben
+    12	Alex Johnson
+    12	Cesar Carruitero
+    12	Colin Curtin
+    12	Dan Pickett
+    12	Dylan Smith
+    12	Hemant Kumar
+    12	Jeff Dutil
+    12	Kent Sibilev
+    12	Matt Bridges
+    12	Matthew Bergman
+    12	Mike Moore
+    12	Myron Marston
+    12	Nikita Afanasenko
+    12	Sam
+    12	Stefan Penner
+    12	Tim Wade
+    12	Washington Luiz
+    12	Willem van Bergen
+    11	Benjamin Quorning
+    11	Dieter Komendera
+    11	Douwe Maan
+    11	Gabriel Horner
+    11	Grant Hutchins
+    11	Jack Danger Canty
+    11	Jay Hayes
+    11	Jeremy Walker
+    11	Juanjo Bazán
+    11	Mark Turner
+    11	Melanie Gilman
+    11	Pavel Pravosud
+    11	Tony Miller
+    11	heavysixer
+    11	rspeicher
+    10	Aditya
+    10	Aldo "xoen" Giambelluca
+    10	Alex Tambellini
+    10	Alexander Uvarov
+    10	Ari Pollak
+    10	Attila Domokos
+    10	Bratish Goswami
+    10	Brian Morearty
+    10	Brooks Reese
+    10	Carson McDonald
+    10	David Dollar
+    10	Elliot Winkler
+    10	Evan Phoenix
+    10	Evgeniy Dolzhenko
+    10	Florent Guilleux
+    10	Jatinder Singh
+    10	Jiri Pospisil
+    10	Joe Van Dyk
+    10	Jonathan Viney
+    10	Marcin Raczkowski
+    10	Max Lapshin
+    10	Michael Lavrisha
+    10	Michael de Silva
+    10	Mike Gehard
+    10	Nick
+    10	Paul McMahon
+    10	Rishi Jain
+    10	Sergio
+    10	Steven Harman
+    10	Szymon Nowak
+    10	Tim Connor
+    10	Tim Pope
+    10	Weston Platter
+    10	Yehuda Katz and Carl Lerche
+    10	dharmatech
+    10	ganesh
