@@ -2,7 +2,7 @@
    371	Steve Klabnik
    114	Terence Lee
     85	Ryan Biesemeyer
-    66	Łukasz Strzałkowski
+    66	Åukasz StrzaÅkowski
     41	Tony Arcieri
     32	Jonathan Hyman
     22	Postmodern

@@ -1,10 +1,10 @@
-
+import numpy as np
 INPUT_FOLDER_PATH = '../../files/repos_incomplete/'
 
 def get_developer_commits(repo_name):
     dev_list = []
     commit_list = []
-    with open(INPUT_FOLDER_PATH + repo_name + '/commits.txt') as file:
+    with open(INPUT_FOLDER_PATH + repo_name + '/commits.txt', encoding='latin-1') as file:
         for line in file:
             stripped = line.strip()
             splited = stripped.split()
@@ -18,7 +18,7 @@ def get_developer_commits(repo_name):
 def get_addition_deletion(repo_name):
     add_list = []
     del_list = []
-    with open(INPUT_FOLDER_PATH + repo_name + '/aads.txt') as file:
+    with open(INPUT_FOLDER_PATH + repo_name + '/aads.txt', encoding='latin-1') as file:
         for line in file:
             if line.isspace():
                 add_list.append(0)
@@ -34,18 +34,24 @@ def get_addition_deletion(repo_name):
 
 def get_days_since_last_commit(repo_name):
     days_list = []
-    with open(INPUT_FOLDER_PATH + repo_name + '/daysSinceLast.txt') as file:
+    with open(INPUT_FOLDER_PATH + repo_name + '/daysSinceLast.txt', encoding='latin-1') as file:
         for line in file:
             if line.isspace():
-                days_list.append(0)
+                days_list.append(-1)
                 continue
             days_list.append(int(line))
-    return days_list
+    print(days_list)
+    avg_list = [x for x in days_list if x != -1]
+    avg = round(np.mean(avg_list))
+    print(avg)
+    result = [x if x!=-1 else avg for x in days_list]
+    print(result)
+    return result
 
 
 def get_days_first_to_last_commit(repo_name):
     days_list = []
-    with open(INPUT_FOLDER_PATH + repo_name + '/daysBetweenFirstLast.txt') as file:
+    with open(INPUT_FOLDER_PATH + repo_name + '/daysBetweenFirstLast.txt', encoding='latin-1') as file:
         for line in file:
             if line.isspace():
                 days_list.append(0)

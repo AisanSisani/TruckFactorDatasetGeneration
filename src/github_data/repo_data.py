@@ -16,9 +16,9 @@ class RepoData:
         self.df = None
         self.normalized_df = None
 
-    def get_normalized_df(self, verbose=False):
+    def get_normalized_df(self, type_norm, verbose=False):
         if self.normalized_df is None:
-            self.produce_normalized_df(verbose)
+            self.produce_normalized_df(type_norm, verbose)
         return self.normalized_df
 
     def get_df(self, verbose=False):
@@ -26,36 +26,49 @@ class RepoData:
             self.produce_df(verbose)
         return self.df
 
-    def produce_normalized_df(self, verbose=False):
+    def produce_normalized_df(self, type_norm, verbose=False):
         if self.df is None:
             self.produce_df(verbose)
-        df = self.df
+        df = self.df.copy()
         df1 = df.loc[:, (df.columns != 'developer') & (df.columns != 'repo')]
-
-        print(df1.head())
         normalized_df = pd.DataFrame()
-        for column in df1:
-            if not (df[column] == 0).all():
-                normalized_df[column] = (df1[column] - df1[column].mean()) / df1[column].std()
-            else:
-                normalized_df[column] = df1[column]
-        # normalized_df = (df1 - df1.mean()) / df1.std()
-        print(normalized_df.head())
+
+        if type_norm == 'zscore':
+            for column in df1:
+                if not (df[column] == 0).all():
+                    normalized_df[column] = (df1[column] - df1[column].mean()) / df1[column].std()
+                else:
+                    normalized_df[column] = df1[column]
+
+            df.loc[:, (df.columns != 'developer') & (df.columns != 'repo')] = normalized_df
+            self.normalized_df = df
+        elif type_norm == 'ratio':
+            for column in df1:
+                sum = df[column].sum()
+                print(sum)
+                if sum:
+                    normalized_df[column] = df1[column]/sum
+                    normalized_df[column] = (normalized_df[column] - normalized_df[column].min()) / normalized_df[column].max()
+                else:
+                    normalized_df[column] = df1[column]
+        else:
+            raise "incorrect type for normalization"
+
         df.loc[:, (df.columns != 'developer') & (df.columns != 'repo')] = normalized_df
         self.normalized_df = df
-
 
     def produce_df(self, verbose=False):
         github_connection = self.github_con
 
-        repo = github_connection.get_repo(self.repo_url)
+        # repo = github_connection.get_repo(self.repo_url)
+        # pullList = repo.get_pulls(state='all')
+        # pullClosedList = repo.get_pulls(state='closed')
         repo_name = self.repo_name
 
         ''' can be replace with *** : START'''
 
         dev_list, commit_list = helper.get_developer_commits(repo_name)
-        pullList = repo.get_pulls(state='all')
-        pullClosedList = repo.get_pulls(state='closed')
+
 
         n = len(dev_list)
 
@@ -78,7 +91,7 @@ class RepoData:
 
 
         ''' can be replace with *** : END'''
-
+        '''
         # Open Pull Requests
         start_time = time.time()
         df['pull_open'] = [0] * n
@@ -96,9 +109,10 @@ class RepoData:
         # Closed Pull Requests
         start_time = time.time()
         df['pull_merged'] = [0] * n
-
-        for i in tqdm.tqdm(range(pullClosedList.totalCount), desc="Merged Pull"):
-            pull = pullClosedList[i]
+        for i in tqdm.tqdm(range(pullList.totalCount), desc="Merged Pull"):
+            pull = pullList[i]
+            if pull.status != 'closed':
+                continue
             if pull.created_at < FINAL_DATE:
                 if pull.merged_by is not None:
                     name = pull.merged_by.name
@@ -107,7 +121,7 @@ class RepoData:
         if verbose:
             print(">> Merged pull requests in %s seconds" % (end_time - start_time))
         # df.to_csv('files/o3_merged.csv')
-
+        '''
         # Users Commented on the pull requests
         # start_time = time.time()
         # df['pull_comment'] = [0] * n

@@ -16,7 +16,7 @@
         },
         {
             "id": "15",
-            "status": 0,
+            "status": 1,
             "repo_url": "composer/composer",
             "authors": [
                 {
@@ -54,7 +54,7 @@
         },
         {
             "id": "11",
-            "status": 0,
+            "status": 1,
             "repo_url": "ipython/ipython",
             "min_commits": 5,
             "authors": [
@@ -74,7 +74,7 @@
         },
         {
             "id": "12",
-            "status": 0,
+            "status": 1,
             "repo_url": "saltstack/salt",
             "min_commits": 20,
             "authors": [
@@ -115,7 +115,7 @@
         },
         {
             "id": "13",
-            "status": 2,
+            "status": 1,
             "repo_url": "rails/rails",
             "min_commits": 9,
             "authors": [
@@ -150,7 +150,7 @@
         },
         {
             "id": "16",
-            "status": 0,
+            "status": 1,
             "repo_url": "facebook/osquery",
             "authors": [
                 {

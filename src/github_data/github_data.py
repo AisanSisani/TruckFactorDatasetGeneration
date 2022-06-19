@@ -15,9 +15,10 @@ class GithubData:
         self.data = data
         self.github_con = github_con
 
-    def produce_df(self, verbose=False):
+    def produce_df(self, type_norm, verbose=False):
         try:
-            df = pd.read_csv(f'../../files/github.csv', index_col=False)
+            # df = pd.read_csv(f'../../files/github.csv', index_col=False)
+            df = pd.DataFrame()
         except:
             df = pd.DataFrame()
             print("> No dataframe was found at ../../files/github.csv")
@@ -32,9 +33,12 @@ class GithubData:
                 if verbose:
                     print(f"> {i + 1}/{repos_size}: {repo_url}")
 
+                # TODO
+                '''
                 if repo['status'] == 1:
                     print(f"> {repo_url} has been gathered before.")
                     continue
+                '''
 
                 if repo['status'] == -1:
                     print(f"> {repo_url} is requested to be skipped.")
@@ -44,7 +48,7 @@ class GithubData:
                     print(f"> The features for {repo_url} is being gathered...")
                 repo_d = repo_data.RepoData(repo_url, self.github_con)
                 repo_df = repo_d.get_df(verbose=True)
-                repo_df_norm = repo_d.get_normalized_df(verbose=True)
+                repo_df_norm = repo_d.get_normalized_df(type_norm, verbose=True)
                 if verbose:
                     print(f"> The features for {repo_url} has been gathered.")
 
@@ -64,7 +68,7 @@ class GithubData:
                 df = pd.concat([df, repo_df_norm], ignore_index=True)
 
 
-                repo_df_norm.to_csv(f'../../files/repos_complete/{repo_d.repo_name}.csv', index=False)
+                repo_df_norm.to_csv(f'../../files/repos_complete/{repo_d.repo_name}_{type_norm}.csv', index=False)
                 repo_df.to_csv(f'../../files/repos_notnorm/{repo_d.repo_name}.csv', index=False)
                 if verbose:
                     print(f"> The dataframe for repository {repo_url} is saved at ../../files/repos/")
@@ -84,11 +88,11 @@ class GithubData:
 
         self.df = df
 
-    def get_df(self, verbose=False):
+    def get_df(self, type_norm,verbose=False):
         if self.df is None:
             if verbose:
                 print("> Creating github dataframe.")
-            self.produce_df(verbose)
+            self.produce_df(type_norm, verbose)
         return self.df
 
 
@@ -110,7 +114,8 @@ def main():
     print("Github connection created.")
 
     gd = GithubData(data, github_con)
-    df = gd.get_df(verbose=True)
+    type_norm = 'ratio'
+    df = gd.get_df(type_norm, verbose=True)
 
     # TODO change the path to a convention
     df.to_csv(f'../../files/github.csv', index=False)

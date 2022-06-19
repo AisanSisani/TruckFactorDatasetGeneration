@@ -181,7 +181,7 @@
     26	Fred Wu
     26	Kir Shatrov
     26	Subba Rao Pasupuleti
-    25	Hrvoje Šimić
+    25	Hrvoje Simic
     25	Luca Guidi
     24	Mike Perham
     24	Ryan Davis
@@ -228,7 +228,7 @@
     18	Dmitriy Kiriyenko
     18	Jan De Poorter
     18	Jorge Bejar
-    18	Josef Šimánek
+    18	Josef Simanek
     18	Lawrence Pit
     18	Santiago Pastorino and José Ignacio Costa
     18	Yaroslav Markin
