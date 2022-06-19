@@ -5,12 +5,12 @@
       "status": 1,
       "repo_url" : "resque/resque",
       "authors" : [
-        {"username" :  "defunkt"},
-        {"username" :  "lukaszx0"},
-        {"username" :  "yaauie"},
-        {"username" :  "steveklabnik"},
-        {"username" :  "einarj"},
-        {"username" :  "hone"}
+        {"username" :  "Chris Wanstrath"},
+        {"username" :  "Łukasz Strzałkowsk"},
+        {"username" :  "Ryan Biesemeyer"},
+        {"username" :  "Steve Klabnik"},
+        {"username" :  "Einar Jonsson"},
+        {"username" :  "Terence Lee"}
       ]
     },
     {
@@ -19,10 +19,10 @@
       "repo_url" : "ipython/ipython",
       "min_commits": 5,
       "authors" : [
-        {"username" :  "minrk"},
-        {"username" :  "takluyver"},
-        {"username" :  "ellisonbg"},
-        {"username" :  "jdfreder"}
+        {"username" :  "MinRK"},
+        {"username" :  "Thomas Kluyver"},
+        {"username" :  "Brian Granger"},
+        {"username" :  "Jonathan Frederic"}
       ]
     },
     {
@@ -75,8 +75,8 @@
       "status": 0,
       "repo_url" : "composer/composer",
       "authors" : [
-        {"username" :  "Seldaek"},
-        {"username" :  "naderman"}
+        {"username" :  "Jordi Boggiano"},
+        {"username" :  "Nils Adermann"}
       ]
     },
     {
@@ -84,8 +84,8 @@
       "status": 0,
       "repo_url" : "facebook/osquery",
       "authors" : [
-        {"username" :  "theopolis"},
-        {"username" :  "marpaia"}
+        {"username" :  "Teddy Reed"},
+        {"username" :  "Mike Arpaia"}
 
       ]
     }
