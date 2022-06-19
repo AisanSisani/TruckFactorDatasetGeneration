@@ -32,7 +32,15 @@ class RepoData:
         df = self.df
         df1 = df.loc[:, (df.columns != 'developer') & (df.columns != 'repo')]
 
-        normalized_df = (df1 - df1.mean()) / df1.std()
+        print(df1.head())
+        normalized_df = pd.DataFrame()
+        for column in df1:
+            if not (df[column] == 0).all():
+                normalized_df[column] = (df1[column] - df1[column].mean()) / df1[column].std()
+            else:
+                normalized_df[column] = df1[column]
+        # normalized_df = (df1 - df1.mean()) / df1.std()
+        print(normalized_df.head())
         df.loc[:, (df.columns != 'developer') & (df.columns != 'repo')] = normalized_df
         self.normalized_df = df
 
@@ -78,7 +86,8 @@ class RepoData:
             pull = pullList[i]
             if pull.created_at < FINAL_DATE:
                 if pull.user is not None:
-                    name = pull.user.login
+                    name = pull.user.name
+                    print(name)
                     df.loc[df['developer'] == name, 'pull_open'] += 1
         end_time = time.time()
         if verbose:
@@ -93,7 +102,7 @@ class RepoData:
             pull = pullClosedList[i]
             if pull.created_at < FINAL_DATE:
                 if pull.merged_by is not None:
-                    name = pull.merged_by.login
+                    name = pull.merged_by.name
                     df.loc[df['developer'] == name, 'pull_merged'] += 1
         end_time = time.time()
         if verbose:
