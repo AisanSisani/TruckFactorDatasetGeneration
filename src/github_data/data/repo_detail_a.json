@@ -1,0 +1,93 @@
+{
+  "repositories": [
+    {
+      "id": "10",
+      "status": 0,
+      "repo_url" : "resque/resque",
+      "authors" : [
+        {"username" :  "Chris Wanstrath"},
+        {"username" :  "Łukasz Strzałkowsk"},
+        {"username" :  "Ryan Biesemeyer"},
+        {"username" :  "Steve Klabnik"},
+        {"username" :  "Einar Jonsson"},
+        {"username" :  "Terence Lee"}
+      ]
+    },
+    {
+      "id": "11",
+      "status": 0,
+      "repo_url" : "ipython/ipython",
+      "min_commits": 5,
+      "authors" : [
+        {"username" :  "MinRK"},
+        {"username" :  "Thomas Kluyver"},
+        {"username" :  "Brian Granger"},
+        {"username" :  "Jonathan Frederic"}
+      ]
+    },
+    {
+
+      "id": "13",
+      "status": 0,
+      "repo_url" : "saltstack/salt",
+      "min_commits": 20,
+      "authors" : [
+        {"username" :  "Pedro Algarvio"},
+        {"username" :  "Thomas S Hatch"},
+        {"username" :  "Joseph Hall"},
+        {"username" :  "rallytime"},
+        {"username" :  "Erik Johnson"},
+        {"username" :  "Jayesh Kariya"},
+        {"username" :  "Mike Place"},
+        {"username" :  "Rupesh Tare"},
+        {"username" :  "Thomas Jackson"},
+        {"username" :  "Seth House"},
+        {"username" :  "Gareth J. Greenaway"}
+      ]
+    },
+    {
+      "id": "14",
+      "status": 0,
+      "repo_url" : "rails/rails",
+      "min_commits": 9,
+      "authors" : [
+        {"username" :  "David Heinemeier Hansson"},
+        {"username" :  "Jose Valim"},
+        {"username" :  "Jeremy Kemper"},
+        {"username" :  "Piotr Sarnacki"},
+        {"username" :  "Aaron Patterson"},
+        {"username" :  "Sean Griffin"},
+        {"username" :  "Jon Leighton"},
+        {"username" :  "Łukasz Strzałkowski"},
+        {"username" :  "Joshua Peek"}
+]},{
+      "id": "16",
+      "status": 0,
+      "vote": "AP",
+      "repo_url" : "clojure/clojure",
+      "authors" : [
+        {"username" :  "Rich Hickey"},
+        {"username" :  "Stuart Halloway"}
+      ]
+    },
+    {
+      "id": "17",
+      "status": 0,
+      "repo_url" : "composer/composer",
+      "authors" : [
+        {"username" :  "Jordi Boggiano"},
+        {"username" :  "Nils Adermann"}
+      ]
+    },
+    {
+      "id": "21",
+      "status": 0,
+      "repo_url" : "facebook/osquery",
+      "authors" : [
+        {"username" :  "Teddy Reed"},
+        {"username" :  "Mike Arpaia"}
+
+      ]
+    }
+  ]
+}

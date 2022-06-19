@@ -1,0 +1,157 @@
+repo,developer,commit,addition,deletion,days_since_last_commit,days_first_to_last_commit,author
+saltstack/salt,Thomas S Hatch,16550,8785,17570,3,1644,1
+saltstack/salt,Pedro Algarvio,6781,9891,19782,1,1554,1
+saltstack/salt,Joseph Hall,3416,2168,4336,2,1623,1
+saltstack/salt,Erik Johnson,3105,3613,7226,1,1317,1
+saltstack/salt,Mike Place,2490,2239,4478,1,691,1
+saltstack/salt,Colton Myers,2339,1087,2174,4,925,0
+saltstack/salt,Seth House,1785,3453,6906,13,1542,1
+saltstack/salt,Nitin Madhok,1746,1878,3756,4,428,0
+saltstack/salt,David Boucha,1601,945,1890,1,1336,0
+saltstack/salt,Justin Findlay,1260,544,1088,1,297,0
+saltstack/salt,Thomas Jackson,1223,2344,4688,25,1029,1
+saltstack/salt,rallytime,1201,1922,3844,1,559,1
+saltstack/salt,Chris Rebert,991,1948,3896,126,746,0
+saltstack/salt,Nicole Thomas,741,36,72,1,559,0
+saltstack/salt,Samuel M Smith,638,1236,2472,187,562,0
+saltstack/salt,C. R. Oldham,542,519,1038,5,674,0
+saltstack/salt,Jeff Schroeder,446,476,952,349,1162,0
+saltstack/salt,Daniel Wallace,428,628,1256,3,564,0
+saltstack/salt,Bo Maryniuk,414,421,842,32,274,0
+saltstack/salt,Gareth J. Greenaway,409,654,1308,9,643,1
+saltstack/salt,Mathieu Le Marec - Pasquet,384,605,1210,77,694,0
+saltstack/salt,Matthew Williams,334,413,826,35,872,0
+saltstack/salt,jfindlay,280,545,1090,1,297,0
+saltstack/salt,Henrik Holmboe,256,593,1186,295,704,0
+saltstack/salt,Jayesh Kariya,240,242,484,57,164,1
+saltstack/salt,vs,231,435,870,29,1342,0
+saltstack/salt,Sean Channel,225,300,600,867,236,0
+saltstack/salt,Ryan Lane,156,274,548,4,540,0
+saltstack/salt,shadowfax-chc,156,154,308,632,339,0
+saltstack/salt,Damian Myerscough,145,142,284,15,587,0
+saltstack/salt,Corey Quinn,139,281,562,19,1349,0
+saltstack/salt,Forrest Alvarez,134,119,238,377,493,0
+saltstack/salt,twangboy,133,161,322,8,160,0
+saltstack/salt,Jack Kuan,130,225,450,894,217,0
+saltstack/salt,Bret Palsson,129,154,308,400,895,0
+saltstack/salt,Samuel Smith,125,0,0,213,499,0
+saltstack/salt,Denis Generalov,124,122,244,721,349,0
+saltstack/salt,Elias Probst,123,167,334,7,673,0
+saltstack/salt,Dan Colish,118,155,310,901,371,0
+saltstack/salt,Andrea-Redi Tsarida,107,130,260,117,74,0
+saltstack/salt,Nicolas Delaby,102,117,234,50,584,0
+saltstack/salt,Clint Armstrong,100,121,242,119,264,0
+saltstack/salt,regilero,100,139,278,536,135,0
+saltstack/salt,Aaron Tygart,99,111,222,761,332,0
+saltstack/salt,Michael Steed,94,163,326,1,132,0
+saltstack/salt,Evan Borgstrom,92,128,256,151,1178,0
+saltstack/salt,Robert Keizer,91,83,166,740,82,0
+saltstack/salt,Niels Abspoel,90,166,332,60,934,0
+saltstack/salt,Steve Weber,88,90,180,17,501,0
+saltstack/salt,Arnold Bechtoldt,86,219,438,42,514,0
+saltstack/salt,Omer Katz,85,113,226,194,344,0
+saltstack/salt,Aditya Kulkarni,84,97,194,147,532,0
+saltstack/salt,Jeff Hutchins,83,92,184,789,450,0
+saltstack/salt,mafro,83,99,198,490,615,0
+saltstack/salt,Clint Savage,80,84,168,745,693,0
+saltstack/salt,Jorge Schrauwen,79,76,152,1,29,0
+saltstack/salt,Florian Ermisch,78,82,164,8,1120,0
+saltstack/salt,Erik Nolte,77,122,244,1443,66,0
+saltstack/salt,Ronald van Zantvoort,75,92,184,50,169,0
+saltstack/salt,Christer Edwards,72,118,236,41,1320,0
+saltstack/salt,Jacob Hammons,70,536,1072,6,163,0
+saltstack/salt,Baiju Muthukadan,69,191,382,929,282,0
+saltstack/salt,Dmitry Kuzmenko,68,176,352,7,246,0
+saltstack/salt,Michael Birtwell,67,51,102,390,260,0
+saltstack/salt,Scott Walton,63,77,154,390,726,0
+saltstack/salt,Thayne Harbaugh,63,129,258,28,541,0
+saltstack/salt,Claudiu Popescu,58,60,120,112,109,0
+saltstack/salt,Matthew Hopkins,58,32,64,259,356,0
+saltstack/salt,Mickey Malone,57,57,114,651,66,0
+saltstack/salt,Tor Hveem,55,47,94,173,1198,0
+saltstack/salt,pengyao,54,55,110,58,833,0
+saltstack/salt,Markus Gattol,53,153,306,1370,15,0
+saltstack/salt,ranl,53,53,106,463,279,0
+saltstack/salt,Rupesh Tare,52,49,98,197,59,1
+saltstack/salt,Fred Reimer,51,51,102,117,163,0
+saltstack/salt,K Jonathan Harker,51,68,136,518,516,0
+saltstack/salt,Nahum Shalman,50,44,88,145,520,0
+saltstack/salt,Rahul Handay,50,50,100,99,53,0
+saltstack/salt,Xavier Barbosa,50,101,202,392,388,0
+saltstack/salt,David Anderson,49,87,174,518,216,0
+saltstack/salt,Frank Klaassen,49,56,112,140,1175,0
+saltstack/salt,Roman Inflianskas,49,77,154,162,247,0
+saltstack/salt,ran,49,355,710,4,1317,0
+saltstack/salt,Ollie Walsh,48,45,90,448,370,0
+saltstack/salt,Eric Poelke,47,53,106,1113,260,0
+saltstack/salt,Bruno Binet,46,41,82,12,587,0
+saltstack/salt,Andreas Lutro,45,48,96,7,135,0
+saltstack/salt,mguegan,45,39,78,125,711,0
+saltstack/salt,Daniel Bradshaw,44,34,68,365,270,0
+saltstack/salt,Daniel Hobley,43,56,112,13,293,0
+saltstack/salt,Volker Schwicking,42,42,84,361,575,0
+saltstack/salt,David Lindquist,41,42,84,483,506,0
+saltstack/salt,Ted Strzalkowski,41,29,58,44,527,0
+saltstack/salt,Stephen Spencer,40,48,96,97,54,0
+saltstack/salt,faust,40,51,102,787,41,0
+saltstack/salt,Bruno Clermont,39,73,146,28,989,0
+saltstack/salt,David Bishop,39,27,54,1165,103,0
+saltstack/salt,Arthur Lutz,38,46,92,4,703,0
+saltstack/salt,Jeremy Rosenbaum,37,41,82,1,327,0
+saltstack/salt,Joe Healy,36,93,186,117,825,0
+saltstack/salt,Amir Pakdel,35,33,66,203,516,0
+saltstack/salt,Ãyvind Saltvik,35,34,68,474,20,0
+saltstack/salt,Christophe Drevet-Droguet,34,35,70,67,557,0
+saltstack/salt,Hung Nguyen Viet,34,42,84,194,217,0
+saltstack/salt,Jens Rantil,34,36,72,4,1248,0
+saltstack/salt,John Albietz,34,34,68,249,884,0
+saltstack/salt,Kaithar,34,37,74,76,554,0
+saltstack/salt,Shane Lee,34,11,22,5,182,0
+saltstack/salt,Corin Kochenower,33,64,128,110,59,0
+saltstack/salt,Michael Lustfield,33,40,80,458,823,0
+saltstack/salt,Alexey Ivanov,32,73,146,374,239,0
+saltstack/salt,Grischa Meyer,32,32,64,70,827,0
+saltstack/salt,Kevin Bowling,32,43,86,14,509,0
+saltstack/salt,Cimarron Mittelsteadt,31,35,70,189,177,0
+saltstack/salt,Mathias Gug,31,50,100,1,222,0
+saltstack/salt,Samuel Lai,31,33,66,493,15,0
+saltstack/salt,Antoine Jacoutot,30,48,96,41,327,0
+saltstack/salt,Emile 'iMil' Heitor,30,27,54,799,39,0
+saltstack/salt,Jeffrey C. Ollie,30,29,58,600,727,0
+saltstack/salt,Roberto Aguilar,30,31,62,650,275,0
+saltstack/salt,Ulrich Dangel,30,45,90,828,334,0
+saltstack/salt,Viet Hung Nguyen,30,32,64,82,689,0
+saltstack/salt,root,30,34,68,29,1342,0
+saltstack/salt,Michael Persson,29,29,58,340,57,0
+saltstack/salt,Nick Lang (Salt minion),29,26,52,1239,18,0
+saltstack/salt,Aneesh Agrawal,28,57,114,33,191,0
+saltstack/salt,Tom Vaughan,28,42,84,1035,188,0
+saltstack/salt,jond,28,28,56,179,297,0
+saltstack/salt,ydavid,28,39,78,918,76,0
+saltstack/salt,Christopher A. Stelma,27,30,60,454,112,0
+saltstack/salt,Flavian,27,27,54,208,22,0
+saltstack/salt,Rafael Uzarowski,27,22,44,39,9,0
+saltstack/salt,Yash,27,39,78,26,3,0
+saltstack/salt,Ahmed Kamal,26,26,52,192,19,0
+saltstack/salt,Dave Rawks,26,24,48,333,786,0
+saltstack/salt,Dmitry Malinovsky,26,25,50,623,70,0
+saltstack/salt,Jason R. McNeil,26,28,56,286,594,0
+saltstack/salt,KennethWilke,26,41,82,334,381,0
+saltstack/salt,Alexander Haase,25,26,52,208,12,0
+saltstack/salt,Colin Johnson,25,35,70,309,97,0
+saltstack/salt,Khris Richardson,25,149,298,385,299,0
+saltstack/salt,Nick Lang,25,49,98,1239,22,0
+saltstack/salt,hvnsweeting,25,63,126,194,754,0
+saltstack/salt,iquaba,25,28,56,471,355,0
+saltstack/salt,rorax,25,22,44,294,65,0
+saltstack/salt,Joe Julian,24,33,66,41,167,0
+saltstack/salt,Tarjei HusÃ¸y,24,62,124,6,532,0
+saltstack/salt,Alan Garfield,23,23,46,810,65,0
+saltstack/salt,Andrew Hammond,23,31,62,375,534,0
+saltstack/salt,Andrew Kuhnhausen,23,23,46,1246,7,0
+saltstack/salt,Eivind Uggedal,23,71,142,1051,317,0
+saltstack/salt,Grier Johnson,23,37,74,1106,169,0
+saltstack/salt,Robert Davis,23,22,44,13,57,0
+saltstack/salt,Romeo Theriault,23,27,54,1004,87,0
+saltstack/salt,Sergey Kizunov,23,48,96,1,158,0
+saltstack/salt,Tim O'Guin,23,23,46,237,363,0

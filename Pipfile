@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 pygithub = "*"
+pandas = "*"
+path = "*"
+tqdm = "*"
+colorama = "*"
 
 [dev-packages]
 

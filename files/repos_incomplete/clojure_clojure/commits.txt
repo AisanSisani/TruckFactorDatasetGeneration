@@ -1,0 +1,15 @@
+  1817	Rich Hickey
+   249	Stuart Halloway
+   226	Tom Faulhaber
+   152	Hudson @ build.clojure.org
+    83	Alex Miller
+    56	Christophe Grand
+    43	Andy Fingerhut
+    36	Stuart Sierra
+    30	Chouser
+    20	Nicola Mometto
+    20	fogus
+    17	Ben Smith-Mannschott
+    17	Chas Emerick
+    13	Alexander Taggart
+    13	Tassilo Horn
