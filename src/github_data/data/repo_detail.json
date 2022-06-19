@@ -1,94 +1,165 @@
 {
-  "repositories": [
-    {
-      "id": "10",
-      "status": 1,
-      "repo_url" : "resque/resque",
-      "authors" : [
-        {"username" :  "defunkt"},
-        {"username" :  "lukaszx0"},
-        {"username" :  "yaauie"},
-        {"username" :  "steveklabnik"},
-        {"username" :  "einarj"},
-        {"username" :  "hone"}
-      ]
-    },
-    {
-      "id": "11",
-      "status": 2,
-      "repo_url" : "ipython/ipython",
-      "min_commits": 5,
-      "authors" : [
-        {"username" :  "minrk"},
-        {"username" :  "takluyver"},
-        {"username" :  "ellisonbg"},
-        {"username" :  "jdfreder"}
-      ]
-    },
-    {
-
-      "id": "12",
-      "status": 2,
-      "repo_url" : "saltstack/salt",
-      "min_commits": 20,
-      "authors" : [
-        {"username" :  "Pedro Algarvio"},
-        {"username" :  "Thomas S Hatch"},
-        {"username" :  "Joseph Hall"},
-        {"username" :  "rallytime"},
-        {"username" :  "Erik Johnson"},
-        {"username" :  "Jayesh Kariya"},
-        {"username" :  "Mike Place"},
-        {"username" :  "Rupesh Tare"},
-        {"username" :  "Thomas Jackson"},
-        {"username" :  "Seth House"},
-        {"username" :  "Gareth J. Greenaway"}
-      ]
-    },
-    {
-      "id": "13",
-      "status": 2,
-      "repo_url" : "rails/rails",
-      "min_commits": 9,
-      "authors" : [
-        {"username" :  "David Heinemeier Hansson"},
-        {"username" :  "Jose Valim"},
-        {"username" :  "Jeremy Kemper"},
-        {"username" :  "Piotr Sarnacki"},
-        {"username" :  "Aaron Patterson"},
-        {"username" :  "Sean Griffin"},
-        {"username" :  "Jon Leighton"},
-        {"username" :  "Łukasz Strzałkowski"},
-        {"username" :  "Joshua Peek"}
-      ]
-    },
-    {
-      "id": "14",
-      "status": 0,
-      "vote": "AP",
-      "repo_url" : "clojure/clojure",
-      "authors" : [
-        {"username" :  "Rich Hickey"},
-        {"username" :  "Stuart Halloway"}
-      ]
-    },
-    {
-      "id": "15",
-      "status": 0,
-      "repo_url" : "composer/composer",
-      "authors" : [
-        {"username" :  "Seldaek"},
-        {"username" :  "naderman"}
-      ]
-    },
-    {
-      "id": "16",
-      "status": 0,
-      "repo_url" : "facebook/osquery",
-      "authors" : [
-        {"username" :  "theopolis"},
-        {"username" :  "marpaia"}
-      ]
-    }
-  ]
+    "repositories": [
+        {
+            "id": "14",
+            "status": 1,
+            "vote": "AP",
+            "repo_url": "clojure/clojure",
+            "authors": [
+                {
+                    "username": "Rich Hickey"
+                },
+                {
+                    "username": "Stuart Halloway"
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "status": 0,
+            "repo_url": "composer/composer",
+            "authors": [
+                {
+                    "username": "Seldaek"
+                },
+                {
+                    "username": "naderman"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "status": -1,
+            "repo_url": "resque/resque",
+            "authors": [
+                {
+                    "username": "defunkt"
+                },
+                {
+                    "username": "lukaszx0"
+                },
+                {
+                    "username": "yaauie"
+                },
+                {
+                    "username": "steveklabnik"
+                },
+                {
+                    "username": "einarj"
+                },
+                {
+                    "username": "hone"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "status": 0,
+            "repo_url": "ipython/ipython",
+            "min_commits": 5,
+            "authors": [
+                {
+                    "username": "minrk"
+                },
+                {
+                    "username": "takluyver"
+                },
+                {
+                    "username": "ellisonbg"
+                },
+                {
+                    "username": "jdfreder"
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "status": 0,
+            "repo_url": "saltstack/salt",
+            "min_commits": 20,
+            "authors": [
+                {
+                    "username": "Pedro Algarvio"
+                },
+                {
+                    "username": "Thomas S Hatch"
+                },
+                {
+                    "username": "Joseph Hall"
+                },
+                {
+                    "username": "rallytime"
+                },
+                {
+                    "username": "Erik Johnson"
+                },
+                {
+                    "username": "Jayesh Kariya"
+                },
+                {
+                    "username": "Mike Place"
+                },
+                {
+                    "username": "Rupesh Tare"
+                },
+                {
+                    "username": "Thomas Jackson"
+                },
+                {
+                    "username": "Seth House"
+                },
+                {
+                    "username": "Gareth J. Greenaway"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "status": 2,
+            "repo_url": "rails/rails",
+            "min_commits": 9,
+            "authors": [
+                {
+                    "username": "David Heinemeier Hansson"
+                },
+                {
+                    "username": "Jose Valim"
+                },
+                {
+                    "username": "Jeremy Kemper"
+                },
+                {
+                    "username": "Piotr Sarnacki"
+                },
+                {
+                    "username": "Aaron Patterson"
+                },
+                {
+                    "username": "Sean Griffin"
+                },
+                {
+                    "username": "Jon Leighton"
+                },
+                {
+                    "username": "Lukasz Strzakowski"
+                },
+                {
+                    "username": "Joshua Peek"
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "status": 0,
+            "repo_url": "facebook/osquery",
+            "authors": [
+                {
+                    "username": "theopolis"
+                },
+                {
+                    "username": "marpaia"
+                }
+            ]
+        }
+    ]
 }

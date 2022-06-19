@@ -20,6 +20,10 @@ def get_addition_deletion(repo_name):
     del_list = []
     with open(INPUT_FOLDER_PATH + repo_name + '/aads.txt') as file:
         for line in file:
+            if line.isspace():
+                add_list.append(0)
+                del_list.append(0)
+                continue
             s = line.strip().split()
             addition = int(s[0])
             deletion = int(s[1])
@@ -32,6 +36,9 @@ def get_days_since_last_commit(repo_name):
     days_list = []
     with open(INPUT_FOLDER_PATH + repo_name + '/daysSinceLast.txt') as file:
         for line in file:
+            if line.isspace():
+                days_list.append(0)
+                continue
             days_list.append(int(line))
     return days_list
 
@@ -40,6 +47,9 @@ def get_days_first_to_last_commit(repo_name):
     days_list = []
     with open(INPUT_FOLDER_PATH + repo_name + '/daysBetweenFirstLast.txt') as file:
         for line in file:
+            if line.isspace():
+                days_list.append(0)
+                continue
             days_list.append(int(line))
     return days_list
 

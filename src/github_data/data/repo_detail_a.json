@@ -2,7 +2,7 @@
   "repositories": [
     {
       "id": "10",
-      "status": 1,
+      "status": 0,
       "repo_url" : "resque/resque",
       "authors" : [
         {"username" :  "Chris Wanstrath"},
@@ -15,7 +15,7 @@
     },
     {
       "id": "11",
-      "status": 2,
+      "status": 0,
       "repo_url" : "ipython/ipython",
       "min_commits": 5,
       "authors" : [
@@ -28,7 +28,7 @@
     {
 
       "id": "13",
-      "status": 2,
+      "status": 0,
       "repo_url" : "saltstack/salt",
       "min_commits": 20,
       "authors" : [
@@ -47,7 +47,7 @@
     },
     {
       "id": "14",
-      "status": 2,
+      "status": 0,
       "repo_url" : "rails/rails",
       "min_commits": 9,
       "authors" : [

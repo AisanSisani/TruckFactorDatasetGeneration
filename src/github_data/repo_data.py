@@ -87,7 +87,6 @@ class RepoData:
             if pull.created_at < FINAL_DATE:
                 if pull.user is not None:
                     name = pull.user.name
-                    print(name)
                     df.loc[df['developer'] == name, 'pull_open'] += 1
         end_time = time.time()
         if verbose:
