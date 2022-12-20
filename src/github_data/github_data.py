@@ -114,7 +114,7 @@ def main():
     print("Github connection created.")
 
     gd = GithubData(data, github_con)
-    type_norm = 'ratio'
+    type_norm = 'zscore'
     df = gd.get_df(type_norm, verbose=True)
 
     # TODO change the path to a convention

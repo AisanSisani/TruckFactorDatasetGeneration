@@ -40,7 +40,8 @@ def get_days_since_last_commit(repo_name):
                 days_list.append(-1)
                 continue
             days_list.append(int(line))
-    print(days_list)
+    #print(days_list)
+    #return days_list
     avg_list = [x for x in days_list if x != -1]
     avg = round(np.mean(avg_list))
     print(avg)

@@ -11,7 +11,8 @@ class RepoData:
     def __init__(self, repo_url, github_con):
         self.repo_url = repo_url
         repo_url_s = repo_url.split("/")
-        self.repo_name = f'{repo_url_s[0]}_{repo_url_s[1]}'
+        #self.repo_name = f'{repo_url_s[0]}_{repo_url_s[1]}'
+        self.repo_name = repo_url_s[1]
         self.github_con = github_con
         self.df = None
         self.normalized_df = None

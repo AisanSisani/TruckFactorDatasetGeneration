@@ -1,82 +1,395 @@
 {
     "repositories": [
         {
-            "id": "14",
+            "id": 1,
             "status": 1,
-            "vote": "AP",
-            "repo_url": "clojure/clojure",
+            "repo_url": "nicolasgramlich/AndEngine",
+            "avl": 0,
             "authors": [
                 {
-                    "username": "Rich Hickey"
-                },
-                {
-                    "username": "Stuart Halloway"
+                    "username": "Nicolas Gramlich"
                 }
             ]
         },
         {
-            "id": "15",
+            "id": 2,
             "status": 1,
-            "repo_url": "composer/composer",
+            "repo_url": "androidannotations/androidannotations",
+            "avl": 1,
             "authors": [
                 {
-                    "username": "Seldaek"
+                    "username": "Yoann Delouis "
                 },
                 {
-                    "username": "naderman"
+                    "username": "Csaba Koz\u00e1k"
                 }
             ]
         },
         {
-            "id": "10",
-            "status": -1,
-            "repo_url": "resque/resque",
+            "id": 3,
+            "status": 1,
+            "repo_url": "atom/atom-shell",
+            "avl": 1,
             "authors": [
                 {
-                    "username": "defunkt"
-                },
-                {
-                    "username": "lukaszx0"
-                },
-                {
-                    "username": "yaauie"
-                },
-                {
-                    "username": "steveklabnik"
-                },
-                {
-                    "username": "einarj"
-                },
-                {
-                    "username": "hone"
+                    "username": "Cheng Zhao"
                 }
             ]
         },
         {
-            "id": "11",
+            "id": 4,
+            "status": 1,
+            "repo_url": "capistrano/capistrano",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "Lee Hambley "
+                },
+                {
+                    "username": "Matt Brictson"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "status": 1,
+            "repo_url": "sandstorm-io/capnproto",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Kenton Varda"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "status": 1,
+            "repo_url": "celluloid/celluloid",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Donovan Keme"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "status": 1,
+            "repo_url": "chef/chef",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "John Keiser "
+                },
+                {
+                    "username": "Lamont Granquist "
+                },
+                {
+                    "username": "Bryan McLellan "
+                },
+                {
+                    "username": "Jay Mundrawala"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "status": 1,
+            "repo_url": "d3/d3",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Mike Bostock"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "status": 1,
+            "repo_url": "deis/deis",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "-"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "status": 1,
+            "repo_url": "pallets/flask",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "Markus Unterwaditzer"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "status": 1,
+            "repo_url": "alexreisner/geocoder",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "Alex Reisner"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "status": 1,
+            "repo_url": "ruby-grape/grape",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "dm1try"
+                },
+                {
+                    "username": "Adam Gotterer "
+                },
+                {
+                    "username": "Vladimir Kochnev "
+                },
+                {
+                    "username": "namusyaka"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "status": 1,
+            "repo_url": "gruntjs/grunt",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Ben Alman"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "status": 1,
+            "repo_url": "cantino/huginn",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "Akinori Musha "
+                },
+                {
+                    "username": "Andrew Cantino "
+                },
+                {
+                    "username": "Dominik Sander"
+                }
+            ]
+        },
+        {
+            "id": 15,
             "status": 1,
             "repo_url": "ipython/ipython",
-            "min_commits": 5,
+            "avl": 1,
             "authors": [
                 {
-                    "username": "minrk"
+                    "username": "MinRK "
                 },
                 {
-                    "username": "takluyver"
+                    "username": "Thomas Kluyver "
                 },
                 {
-                    "username": "ellisonbg"
+                    "username": "Brian Granger "
                 },
                 {
-                    "username": "jdfreder"
+                    "username": "Jonathan Frederic "
+                },
+                {
+                    "username": "Matthias Bussonier"
                 }
             ]
         },
         {
-            "id": "12",
+            "id": 16,
+            "status": 1,
+            "repo_url": "junit-team/junit4",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "David Saff "
+                },
+                {
+                    "username": "Kevin Cooney "
+                },
+                {
+                    "username": "Kent Beck "
+                },
+                {
+                    "username": "Marc Philipp"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "status": 1,
+            "repo_url": "Leaflet/Leaflet",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Vladimir Agafonkin"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "status": 1,
+            "repo_url": "less/less.js",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Luke Page"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "status": 1,
+            "repo_url": "mailpile/Mailpile",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Brennan Novak"
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "status": 1,
+            "repo_url": "dropwizard/metrics",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Ryan Tenney"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "status": 1,
+            "repo_url": "netty/netty",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Trustin Lee "
+                },
+                {
+                    "username": "Norman Maurer"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "status": 1,
+            "repo_url": "SFTtech/openage",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Michael Ensslin "
+                },
+                {
+                    "username": "Jonas Jelten"
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "status": 1,
+            "repo_url": "facebook/osquery",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Teddy Reed "
+                },
+                {
+                    "username": "Mike Arpaia"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "status": 1,
+            "repo_url": "thoughtbot/paperclip",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Jon Yurek"
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "status": 1,
+            "repo_url": "powerline/powerline",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Nikolai Aleksandrovich (ZyX)"
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "status": 1,
+            "repo_url": "puphpet/puphpet",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Juan Treminio"
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "status": 1,
+            "repo_url": "kennethreitz/requests",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "Cory Benfield "
+                },
+                {
+                    "username": "Ian Cordasco "
+                },
+                {
+                    "username": "Kenneth Reitz"
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "status": 1,
+            "repo_url": "requirejs/requirejs",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "James Burke (jrburke)"
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "status": 1,
+            "repo_url": "ReactiveX/RxJava",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Ben Christensen"
+                }
+            ]
+        },
+        {
+            "id": 30,
             "status": 1,
             "repo_url": "saltstack/salt",
-            "min_commits": 20,
+            "avl": 1,
             "authors": [
                 {
                     "username": "Pedro Algarvio"
@@ -114,50 +427,108 @@
             ]
         },
         {
-            "id": "13",
+            "id": 31,
             "status": 1,
-            "repo_url": "rails/rails",
-            "min_commits": 9,
+            "repo_url": "sass/sass",
+            "avl": 0,
             "authors": [
                 {
-                    "username": "David Heinemeier Hansson"
-                },
-                {
-                    "username": "Jose Valim"
-                },
-                {
-                    "username": "Jeremy Kemper"
-                },
-                {
-                    "username": "Piotr Sarnacki"
-                },
-                {
-                    "username": "Aaron Patterson"
-                },
-                {
-                    "username": "Sean Griffin"
-                },
-                {
-                    "username": "Jon Leighton"
-                },
-                {
-                    "username": "Lukasz Strzakowski"
-                },
-                {
-                    "username": "Joshua Peek"
+                    "username": "Natalie Weizenbaum"
                 }
             ]
         },
         {
-            "id": "16",
+            "id": 32,
             "status": 1,
-            "repo_url": "facebook/osquery",
+            "repo_url": "symfony/symfony",
+            "avl": 0,
             "authors": [
                 {
-                    "username": "theopolis"
+                    "username": "Fabien Potencier (fabpot)"
                 },
                 {
-                    "username": "marpaia"
+                    "username": "Bernhard Schussek (webmozart) "
+                },
+                {
+                    "username": "Tobias Schultze (Tobion) "
+                },
+                {
+                    "username": "Romain Neutron (romainneutron) "
+                },
+                {
+                    "username": "Nicolas Grekas (nicolas-grekas) "
+                },
+                {
+                    "username": "Christophe Coevoet (stof)"
+                },
+                {
+                    "username": "K\u00e9vin Dunglas (dunglas) "
+                },
+                {
+                    "username": "Abdellatif AitBoudad (aitboudad) "
+                },
+                {
+                    "username": "Jakub Zalas (jakzal) "
+                },
+                {
+                    "username": "Christian Flothmann (xabbuh)"
+                },
+                {
+                    "username": "Javier Eguiluz (javiereguiluz)"
+                },
+                {
+                    "username": "Gr\u00e9goire Pineau (lyrixx) "
+                },
+                {
+                    "username": "Jordi Boggiano (seldaek)"
+                },
+                {
+                    "username": "Lukas Kahwe Smith (lsmith77)"
+                },
+                {
+                    "username": "Ryan Weaver (weaverryan)"
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "status": 1,
+            "repo_url": "bjorn/tiled",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Thorbjorn Lindeijer"
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "status": 1,
+            "repo_url": "tornadoweb/tornado",
+            "avl": 0,
+            "authors": [
+                {
+                    "username": "Ben Darnell"
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "status": 1,
+            "repo_url": "Respect/Validation",
+            "avl": 1,
+            "authors": [
+                {
+                    "username": "Alexandre Gaigalas"
+                },
+                {
+                    "username": "Henrique Moody "
+                },
+                {
+                    "username": "Augusto Pascutti"
+                },
+                {
+                    "username": ""
                 }
             ]
         }
