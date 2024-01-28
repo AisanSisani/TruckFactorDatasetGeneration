@@ -18,10 +18,10 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "Yoann Delouis "
+                    "username": "Yoann Delouis"
                 },
                 {
-                    "username": "Csaba Koz\u00e1k"
+                    "username": "Csaba Koz\u00c3\u00a1k"
                 }
             ]
         },
@@ -43,7 +43,7 @@
             "avl": 0,
             "authors": [
                 {
-                    "username": "Lee Hambley "
+                    "username": "Lee Hambley"
                 },
                 {
                     "username": "Matt Brictson"
@@ -68,7 +68,7 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "Donovan Keme"
+                    "username": "//de"
                 }
             ]
         },
@@ -79,13 +79,13 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "John Keiser "
+                    "username": "John Keiser"
                 },
                 {
-                    "username": "Lamont Granquist "
+                    "username": "Lamont Granquist"
                 },
                 {
-                    "username": "Bryan McLellan "
+                    "username": "Bryan McLellan"
                 },
                 {
                     "username": "Jay Mundrawala"
@@ -100,17 +100,6 @@
             "authors": [
                 {
                     "username": "Mike Bostock"
-                }
-            ]
-        },
-        {
-            "id": 9,
-            "status": 1,
-            "repo_url": "deis/deis",
-            "avl": 0,
-            "authors": [
-                {
-                    "username": "-"
                 }
             ]
         },
@@ -146,10 +135,10 @@
                     "username": "dm1try"
                 },
                 {
-                    "username": "Adam Gotterer "
+                    "username": "Adam Gotterer"
                 },
                 {
-                    "username": "Vladimir Kochnev "
+                    "username": "Vladimir Kochnev"
                 },
                 {
                     "username": "namusyaka"
@@ -174,10 +163,10 @@
             "avl": 0,
             "authors": [
                 {
-                    "username": "Akinori Musha "
+                    "username": "Akinori MUSHA"
                 },
                 {
-                    "username": "Andrew Cantino "
+                    "username": "Andrew Cantino"
                 },
                 {
                     "username": "Dominik Sander"
@@ -191,19 +180,19 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "MinRK "
+                    "username": "Benjamin Ragan-Kelley"
                 },
                 {
-                    "username": "Thomas Kluyver "
+                    "username": "Thomas Kluyver"
                 },
                 {
-                    "username": "Brian Granger "
+                    "username": "Brian E. Granger"
                 },
                 {
-                    "username": "Jonathan Frederic "
+                    "username": "Jonathan Frederic"
                 },
                 {
-                    "username": "Matthias Bussonier"
+                    "username": "Matthias Bussonnier"
                 }
             ]
         },
@@ -214,13 +203,13 @@
             "avl": 0,
             "authors": [
                 {
-                    "username": "David Saff "
+                    "username": "David Saff"
                 },
                 {
-                    "username": "Kevin Cooney "
+                    "username": "Kevin Cooney"
                 },
                 {
-                    "username": "Kent Beck "
+                    "username": "kbeck"
                 },
                 {
                     "username": "Marc Philipp"
@@ -278,7 +267,7 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "Trustin Lee "
+                    "username": "Trustin Lee"
                 },
                 {
                     "username": "Norman Maurer"
@@ -292,7 +281,7 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "Michael Ensslin "
+                    "username": "Michael En\u00c3\u0178lin"
                 },
                 {
                     "username": "Jonas Jelten"
@@ -306,10 +295,10 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "Teddy Reed "
+                    "username": "Teddy Reed"
                 },
                 {
-                    "username": "Mike Arpaia"
+                    "username": "mike@arpaia.co"
                 }
             ]
         },
@@ -331,7 +320,7 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "Nikolai Aleksandrovich (ZyX)"
+                    "username": "ZyX"
                 }
             ]
         },
@@ -353,10 +342,10 @@
             "avl": 0,
             "authors": [
                 {
-                    "username": "Cory Benfield "
+                    "username": "Cory Benfield"
                 },
                 {
-                    "username": "Ian Cordasco "
+                    "username": "Ian Cordasco"
                 },
                 {
                     "username": "Kenneth Reitz"
@@ -370,7 +359,7 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "James Burke (jrburke)"
+                    "username": "jrburke"
                 }
             ]
         },
@@ -427,66 +416,55 @@
             ]
         },
         {
-            "id": 31,
-            "status": 1,
-            "repo_url": "sass/sass",
-            "avl": 0,
-            "authors": [
-                {
-                    "username": "Natalie Weizenbaum"
-                }
-            ]
-        },
-        {
             "id": 32,
             "status": 1,
             "repo_url": "symfony/symfony",
             "avl": 0,
             "authors": [
                 {
-                    "username": "Fabien Potencier (fabpot)"
+                    "username": "Fabien Potencier"
                 },
                 {
-                    "username": "Bernhard Schussek (webmozart) "
+                    "username": "Bernhard Schussek"
                 },
                 {
-                    "username": "Tobias Schultze (Tobion) "
+                    "username": "Tobias Schultze"
                 },
                 {
-                    "username": "Romain Neutron (romainneutron) "
+                    "username": "Romain Neutron"
                 },
                 {
-                    "username": "Nicolas Grekas (nicolas-grekas) "
+                    "username": "Nicolas Grekas"
                 },
                 {
-                    "username": "Christophe Coevoet (stof)"
+                    "username": "Christophe Coevoet"
                 },
                 {
-                    "username": "K\u00e9vin Dunglas (dunglas) "
+                    "username": "K\u00c3\u00a9vin Dunglas"
                 },
                 {
-                    "username": "Abdellatif AitBoudad (aitboudad) "
+                    "username": "Abdellatif Ait boudad"
                 },
                 {
-                    "username": "Jakub Zalas (jakzal) "
+                    "username": "Jakub Zalas"
                 },
                 {
-                    "username": "Christian Flothmann (xabbuh)"
+                    "username": "Christian Flothmann"
                 },
                 {
-                    "username": "Javier Eguiluz (javiereguiluz)"
+                    "username": "Javier Eguiluz"
                 },
                 {
-                    "username": "Gr\u00e9goire Pineau (lyrixx) "
+                    "username": "Gr\u00c3\u00a9goire Pineau"
                 },
                 {
-                    "username": "Jordi Boggiano (seldaek)"
+                    "username": "Jordi Boggiano"
                 },
                 {
-                    "username": "Lukas Kahwe Smith (lsmith77)"
+                    "username": "Lukas Kahwe Smith"
                 },
                 {
-                    "username": "Ryan Weaver (weaverryan)"
+                    "username": "Ryan Weaver"
                 }
             ]
         },
@@ -497,7 +475,7 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "Thorbjorn Lindeijer"
+                    "username": "Thorbj\u00c3\u00b8rn Lindeijer"
                 }
             ]
         },
@@ -519,16 +497,13 @@
             "avl": 1,
             "authors": [
                 {
-                    "username": "Alexandre Gaigalas"
+                    "username": "Alexandre Gomes Gaigalas"
                 },
                 {
-                    "username": "Henrique Moody "
+                    "username": "Henrique Moody"
                 },
                 {
                     "username": "Augusto Pascutti"
-                },
-                {
-                    "username": ""
                 }
             ]
         }
