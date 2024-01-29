@@ -50,7 +50,7 @@ class GithubData:
                 repo_df = repo_d.get_df(verbose=True)
                 repo_df_norm = repo_d.get_normalized_df(type_norm, verbose=True)
                 if verbose:
-                    print(f"> The features for {repo_url} has been gathered.")
+                    print(f"> The features for {repo_url} have been gathered.")
 
                 repo_authors = repo['authors']
                 repo_df_norm['author'] = [0] * repo_df_norm.shape[0]

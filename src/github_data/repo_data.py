@@ -11,7 +11,8 @@ class RepoData:
     def __init__(self, repo_url, github_con):
         self.repo_url = repo_url
         repo_url_s = repo_url.split("/")
-        self.repo_name = f'{repo_url_s[0]}_{repo_url_s[1]}'
+        #self.repo_name = f'{repo_url_s[0]}_{repo_url_s[1]}'
+        self.repo_name = repo_url_s[1]
         self.github_con = github_con
         self.df = None
         self.normalized_df = None
@@ -85,8 +86,21 @@ class RepoData:
         add_del = helper.get_addition_deletion(repo_name)
         df['addition'] = add_del[0]
         df['deletion'] = add_del[1]
+    #    df['edits'] = [add_del[0][i] + 0.2*add_del[1][i] for i in range(len(add_del[0]))]
         df['days_since_last_commit'] = helper.get_days_since_last_commit(repo_name)
         df['days_first_to_last_commit'] = helper.get_days_first_to_last_commit(repo_name)
+        try:
+            df['files'] = helper.get_files(repo_name)
+        except ValueError:
+            listy = helper.get_files(repo_name)
+            print('here')
+        df['commit_messages_length'] = helper.get_commit_messages(repo_name)
+        df['days_worked'] = helper.get_days_worked(repo_name)
+        df['files_blamed'] = helper.get_files_blamed(repo_name)
+        df['issues'] = helper.get_issues(repo_name)
+        df['pulls_created'] = helper.get_pulls(repo_name)
+
+        df = df[df.days_since_last_commit != -1]
 
 
 

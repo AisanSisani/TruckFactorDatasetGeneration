@@ -1,8 +1,0 @@
-repo,developer,commit,addition,deletion,days_since_last_commit,days_first_to_last_commit,author
-facebook/osquery,Teddy Reed,950,3689,7378,1,377,0
-facebook/osquery,mike@arpaia.co,405,1880,3760,14,377,0
-facebook/osquery,Mike Arpaia,267,220,440,14,372,0
-facebook/osquery,Javier Marcos,154,329,658,12,343,0
-facebook/osquery,Mitchell Grenier,73,177,354,89,133,0
-facebook/osquery,Michael O'Farrell,55,145,290,18,72,0
-facebook/osquery,Sean Williams,35,105,210,239,50,0
