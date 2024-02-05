@@ -104,25 +104,37 @@ def get_files_blamed(repo_name):
     return files_blamed_list
 
 def get_issues(repo_name):
-    files_blamed_list = []
+    issues_list = []
     with open(INPUT_FOLDER_PATH + repo_name + '/issues.txt', encoding='utf-8') as file:
         for line in file:
             if line.isspace():
-                files_blamed_list.append(0)
+                issues_list.append(0)
                 continue
-            files_blamed_list.append(int(line))
-    return files_blamed_list
+            issues_list.append(int(line))
+    return issues_list
 
 
 def get_pulls(repo_name):
-    files_blamed_list = []
+    pulls_list = []
     with open(INPUT_FOLDER_PATH + repo_name + '/pullsCreated.txt', encoding='utf-8') as file:
         for line in file:
             if line.isspace():
-                files_blamed_list.append(0)
+                pulls_list.append(0)
                 continue
-            files_blamed_list.append(int(line))
-    return files_blamed_list
+            pulls_list.append(int(line))
+    return pulls_list
+
+
+
+def get_merges(repo_name):
+    merges_list = []
+    with open(INPUT_FOLDER_PATH + repo_name + '/merges.txt', encoding='utf-8') as file:
+        for line in file:
+            if line.isspace():
+                merges_list.append(0)
+                continue
+            merges_list.append(int(line))
+    return merges_list
 
 
 

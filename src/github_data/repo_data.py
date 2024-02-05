@@ -99,6 +99,7 @@ class RepoData:
         df['files_blamed'] = helper.get_files_blamed(repo_name)
         df['issues'] = helper.get_issues(repo_name)
         df['pulls_created'] = helper.get_pulls(repo_name)
+        df['merges'] = helper.get_merges(repo_name)
 
         df = df[df.days_since_last_commit != -1]
 
